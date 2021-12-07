@@ -1,0 +1,31 @@
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body {
+height: 100vb;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.youtube-button {
+padding: 20px;
+color: #fff;
+background-color: cyan;
+display: flex;
+align-items: center;
+}
+
+i {
+  margin-right: 12px;
+}
+
+span {
+  margin-right: 4px;
+}
