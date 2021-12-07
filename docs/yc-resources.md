@@ -6,3 +6,76 @@ https://yt3.ggpht.com/ytc/AKedOLSE_Km3ggvbY8TGxA2CeR9aEfGwBTLo_6_faINbpg=s88-c-k
 
 ### Mark Felton Productions
 icon https://yt3.ggpht.com/DyXSmo3w9Ma3A3MmdWytjZP5PPa8-xrkvfwqGf1_4TVq3JovgialLv60JzdEfIVIRxqg5VeTdj4=s88-c-k-c0x00ffffff-no-rj
+
+### EmperorTigerstar
+icon https://yt3.ggpht.com/ytc/AKedOLSRw_Qnvfwzx31OYa15eeIydj9P4w0hcjQ8LuzuTg=s88-c-k-c0x00ffffff-no-rj
+
+### HistoryMarche
+icon https://yt3.ggpht.com/ytc/AKedOLRBKO0IQtTh52M7GlT2U0iT_Rqs_LOo-3KxVEbpAg=s88-c-k-c0x00ffffff-no-rj
+
+### Military History Visualized
+icon 
+https://yt3.ggpht.com/ytc/AKedOLT8EGPS4dxrzzZfkmD44Bl5FFYjywiYc5efnBhb=s88-c-k-c0x00ffffff-no-rj
+
+### Titus Tech Talk
+icon
+https://yt3.ggpht.com/ytc/AKedOLRlgi0TbAWzMX0ucUbpk-LZK7rH7XRgUsdByIwc=s88-c-k-c0x00ffffff-no-rj
+
+### Russian Rulers and History Podcast
+icon https://yt3.ggpht.com/ytc/AKedOLS9C9bLji7hrHhWhz2iseWcrL0IFCzsftFDNlJr=s88-c-k-c0x00ffffff-no-rj
+
+
+### BazBattles
+icon
+https://yt3.ggpht.com/ytc/AKedOLQy_s7UBfzJXVpTAifTkWImqFmL7C0zRlVxbE27=s88-c-k-c0x00ffffff-no-rj
+
+### Montemayor
+icon
+https://yt3.ggpht.com/LxlC0J0TtSlHx325feoyOyalFnTpM6SnwoF5S9t4-e0bKvz_OnyQXcrwdAZ6J4IrQCSYBiMb=s88-c-k-c0x00ffffff-no-rj
+
+
+### Battleship New Jersey
+icon 
+https://yt3.ggpht.com/ytc/AKedOLQ_eh7Rs6dmuksArj3qCwYNH61_1xTWnKmFYFDB=s88-c-k-c0x00ffffff-no-rj
+
+
+### Invicta
+icon
+https://yt3.ggpht.com/ytc/AKedOLSbTUfVMeFVhtgBIeYTxXs711ALzUbiN2uMhMAfjQ=s88-c-k-c0x00ffffff-no-rj
+
+### Military History not Visualized
+icon
+
+https://yt3.ggpht.com/ytc/AKedOLQFBdn-8_cwi61fcp9KNeDaiiJkCgy3-n6y9M6I=s88-c-k-c0x00ffffff-no-rj
+
+### The AceDestroyer
+icon 
+https://yt3.ggpht.com/ytc/AKedOLR3ZQVKO1BH6TA0hxy8Rqqczw9xWF38dvrUXHFpXw=s88-c-k-c0x00ffffff-no-rj
+
+### Historigraph
+icon
+
+https://yt3.ggpht.com/ytc/AKedOLT4tqfeB9__0DW0f0L0UvRaMt4DIDQZnBqCJ718zA=s88-c-k-c0x00ffffff-no-rj
+
+### hypohystericalhistory
+icon
+
+https://yt3.ggpht.com/882cJcyV41v5ne8mN4xvrx2E1LkErH79avU7Gj0Q74cVmLu6g7MxCjZtEVu1vBqR49G0vMnM0A=s88-c-k-c0x00ffffff-no-rj
+
+
+### Military Aviation History
+icon
+
+https://yt3.ggpht.com/ytc/AKedOLQPDL8a7XRajkoZCtGZx5EgAJEpDJVl_A4SSmnKfw=s88-c-k-c0x00ffffff-no-rj
+
+### Drachinifel
+icon
+
+https://yt3.ggpht.com/ytc/AKedOLQ0VY2YuHUG_wQUouQiXvyyxKYzR3kLnh12z-fS=s88-c-k-c0x00ffffff-no-rj
+
+### The Operations Room 
+icon
+
+https://yt3.ggpht.com/ytc/AKedOLTXHK2_zoplvxwhM6ODEnXBuGO_-1RyCDRJRxmE=s88-c-k-c0x00ffffff-no-rj
+
+###
