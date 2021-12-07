@@ -74,7 +74,72 @@
 <p class="ycapple"><a class="ycapple" href="https://www.youtube.com/c/AppleExplained" target="_blank">Apple Explained</a></p> 
 <textarea  readonly class="yctextbox" >explains apple product disions software plus more </textarea>
  
-  </div>
+<!--tabbed area-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'home')">home</button>
+  <button class="tablinks" onclick="openCity(event, 'rev')">recommended videos</button>
+  <button class="tablinks" onclick="openCity(event, 'stat')">stats</button>
+  <button class="tablinks" onclick="openCity(event, 'playlist')">playlists</button>
+  <button class="tablinks" onclick="openCity(event, 'about')">about</button>
+  <button class="tablinks" onclick="openCity(event, 'allvi')">all videos</button>
+</div>
+
+<div id="rev" class="tabcontent">
+  <h3 class="whh1">London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="stat" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="allvi" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="home" class="tabcontent">
+  <h3>ffffffffffffffffffffffffffffffffffffff</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="about" class="tabcontent">
+ <h2 class="whh1">the youtubers Description</h2>
+ <ul style="list-style-type: none; ">
+   <li class="texttra">... </li>
+   <li class="texttra">...</li>
+ </ul>
+ 
+<article>
+  <h2 class="whh1">Description</h2>
+  <p class="whh1" >Apple Explained is a YouTube channel created by Greg Wyatt Jr. He creates animated videos to explain various aspects of Apple and their products.
+    </p>
+    <p class="whh1">Viewers can contact Greg here: info@appleexplained.com</p>
+</article>
+</div>
+
+<div id="playlist" class="tabcontent">
+  <h3>Tokffffsyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</div>
 
     <script type="text/javascript">
     $(document).ready(function(){
