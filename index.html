@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>History <span>Archive</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items"> <!--the open side bar-->
+        <a href="content/channel.html"><i class="fas fa-desktop"></i><span>youtube channels</span></a>
+        <a href="content/other/index.html"><i class="fas fa-sliders-h"></i><span>other topics</span></a>
+        <a href="content/histo/war.html"><i class="fas fa-cogs"></i><span>wars</span></a>
+        <a href="content/histo/vid.html"><i class="fas fa-table"></i><span>vids</span></a>
+        <a href="content/histo/abook.html"><i class="fas fa-th"></i><span>books & audiobooks</span></a>
+        <a href="content/code/lang.html"><i class="fas fa-info-circle"></i><span>Launguages</span></a>
+        <a href="content/code/doc.html"><i class="fas fa-sliders-h"></i><span>docs & articals</span></a>
+        <a href="content/code/vid.html"><i class="fas fa-table"></i><span>Vids</span></a>
+        <a href="content/tech/doc.html"><i class="fas fa-th"></i><span>docs & articals</span></a>
+        <a href="content/tech/vid.html"><i class="fas fa-info-circle"></i><span>Vids</span></a>
+       
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        
+        <h5>Archives</h5> 
+      </div> <!--icons -->
+      <a href="content/channel.html"><i class="fab fa-youtube"></i><span>youtube channels</span></a>
+      <a href="content/other/index.html" ><i  class="fas fa-question-circle"></i><span>other topics</span></a>
+      <p>history</p>
+      <a href="content/histo/war.html"><i class="fas fa-fighter-jet"></i><span>wars</span></a>
+      <a href="content/histo/vid.html"><i class="fas fa-play"></i><span>vids</span></a>
+      <a href="content/histo/abook.html"><i class="fas fa-microphone"></i><span>books & audiobooks</span></a>
+      <p>coding</p>
+      <a href="content/code/lang.html"><i class="fas fa-java"></i><span>Launguages</span></a>
+      <a href="content/code/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
+      <a href="content/code/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
+      <p>tech</p>
+      <a href="content/tech/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
+      <a href="content/tech/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+    <p > this a website that archives history from all periods and tech coding and many other topics
+    </p>
+    <h3 style="color: red;"><b>disclaimer</b></h3>
+<p>this site is open source at <a  href="https://github.com/githubb11/HISTORY-archive" target="_blank">github</a> so please don't try and inspect it on the site</p>
+
+<img src="images/hp1.jpeg"  style="width: 550px; height: 500px; position: absolute; align-items: center;">
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>
