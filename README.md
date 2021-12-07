@@ -1,3 +1,4 @@
-# this is my persanl website to 
+# this is my persanl website 
 
-# i will not bying taking pull requests
+## pull requests will be not used
+my website is at ___
