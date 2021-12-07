@@ -296,3 +296,19 @@ mpch0 {
   color: red;
   font-weight: bold;
 }
+
+/* ychannel icons yc = youtube channel */
+
+.ycheader {
+  width: 200px;
+  height: 200px;
+}
+
+.ycapple {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  top: 140px;
+  left: 300px;
+  
+}
