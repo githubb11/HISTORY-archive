@@ -136,11 +136,18 @@ label #sidebar_btn:hover{
   margin-top: 60px;
   padding: 20px;
   margin-left: 250px;
+  background-color: #000;
   background-position: center;
   background-size: cover;
   height: 100vh;
   transition: 0.5s;
+  
 }
+
+.content-text {
+  color: #fff;
+}
+
 
 #check:checked ~ .content{
   margin-left: 60px;
