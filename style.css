@@ -305,7 +305,7 @@ mpch0 {
 }
 
 .ycapple {
-  position: absolute;
+  
   color: #fff;
   font-size: 20px;
   top: 80px;
@@ -315,7 +315,7 @@ mpch0 {
 }
 
 .yctextbox {
-  position: absolute;
+  
   top: 300px;
   left: 70px;
   width: 100%;
