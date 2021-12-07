@@ -89,4 +89,7 @@ icon
 https://yt3.ggpht.com/ytc/AKedOLTE8sCvbu2Gebpjlu_bX4YJxwFbnKai7m8zxWD05g=s88-c-k-c0x00ffffff-no-rj
 
 
-### 
+### Battle Order
+
+icon 
+https://yt3.ggpht.com/T089fU9pZdb-LtlwQxpbWAvfS_m7rF8Q-hZHmFb7rvioRcZvDdCBf909F-iWFvkaW3qvKwtLCQ=s48-c-k-c0x00ffffff-no-rj
