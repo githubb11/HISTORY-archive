@@ -78,4 +78,15 @@ icon
 
 https://yt3.ggpht.com/ytc/AKedOLTXHK2_zoplvxwhM6ODEnXBuGO_-1RyCDRJRxmE=s88-c-k-c0x00ffffff-no-rj
 
-###
+### TIK 
+
+https://yt3.ggpht.com/ytc/AKedOLQVZdazNm1tsWtNQJnF4ndRmX4ddEH2PfAEAw11bg=s88-c-k-c0x00ffffff-no-rj
+
+
+### Chris Titus Tech 
+icon
+
+https://yt3.ggpht.com/ytc/AKedOLTE8sCvbu2Gebpjlu_bX4YJxwFbnKai7m8zxWD05g=s88-c-k-c0x00ffffff-no-rj
+
+
+### 
