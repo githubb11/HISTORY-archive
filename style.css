@@ -381,5 +381,7 @@ mpch0 {
   opacity: 0;
 }
 
-
+.tcenter {
+  text-align: center;
+}
 
