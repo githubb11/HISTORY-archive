@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History Archive</title>
+   
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="assets/css/sub.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
@@ -76,6 +77,50 @@
 <p class="ycapple"><a class="ycapple" href="https://www.youtube.com/c/AppleExplained" target="_blank">Apple Explained</a></p> 
 <textarea  readonly class="yctextbox" >explains apple product disions software plus more </textarea>
  
+
+<link rel="stylesheet" href="assets/css/ledi.css"/>
+<script src="assets/js/like/apple-ex.js"></script>
+<div id="demoB"></div>
+
+<!-- (C) JAVASCRIPT -->
+<script>
+var demo = lidi.create({
+  count : [1023, 56], // (C1) INIT LIKES & DISLIKES
+  hWrap : document.getElementById("demoB"),
+
+  // (C2) UPDATE LIKES & DISLIKES COUNT METHOD 1
+  // SEND NEW STATUS TO SERVER, SERVER RESPONDS WITH NEW COUNT
+  onChange : (status, recount) => {
+    var data = new FormData();
+    data.append("status", status);
+    fetch("2-dummy.txt", { method: "POST", body: data })
+    .then(res => res.json())
+    .then((update) => { recount(update); })
+    .catch((err) => { console.error(err); });
+  }
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--tabbed area-->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'home')">home</button>
@@ -123,7 +168,7 @@
   </ul>
   <template type="markdown">
    
-<p><a href="">text bassed list</a></p>
+<p><a href="assets/html/youtube/all-yt-c-vids-text/apple-expl.html">text bassed list</a></p>
     
 <!--videos--> <!---
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TTPCBt1ukY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
