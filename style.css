@@ -171,6 +171,7 @@ label #sidebar_btn:hover{
   margin-bottom: 10px;
   font-size: 14px;
   opacity: 0.8;
+  border-radius: 45px;
 }
 
 /* Responsive CSS */
