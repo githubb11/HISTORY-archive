@@ -73,6 +73,171 @@
       <img class="ycheader" src="https://yt3.ggpht.com/ytc/AKedOLTXHK2_zoplvxwhM6ODEnXBuGO_-1RyCDRJRxmE=s88-c-k-c0x00ffffff-no-rj" alt="channel logo">
       <p class="ycapple"><a class="ycapple" href="https://www.youtube.com/channel/UCnZJt7yQw5IztVwe-Dscd-Q" target="_blank">The Operations Room</a></p> 
       <textarea  readonly class="yctextbox" >war stuff</textarea>
+
+      <link rel="stylesheet" href="assets/css/ledi.css"/>
+<script src="assets/js/like/.js"></script>
+<div id="demoB"></div>
+
+<!-- (C) JAVASCRIPT -->
+<script>
+var demo = lidi.create({
+  count : [1023, 56], // (C1) INIT LIKES & DISLIKES
+  hWrap : document.getElementById("demoB"),
+
+  // (C2) UPDATE LIKES & DISLIKES COUNT METHOD 1
+  // SEND NEW STATUS TO SERVER, SERVER RESPONDS WITH NEW COUNT
+  onChange : (status, recount) => {
+    var data = new FormData();
+    data.append("status", status);
+    fetch("2-dummy.txt", { method: "POST", body: data })
+    .then(res => res.json())
+    .then((update) => { recount(update); })
+    .catch((err) => { console.error(err); });
+  }
+});
+
+
+
+</script>
+
+
+
+
+
+<!--tabbed area-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'home')">home</button>
+  <button class="tablinks" onclick="openCity(event, 'rev')">recommended videos</button>
+  <button class="tablinks" onclick="openCity(event, 'stat')">stats</button>
+  <button class="tablinks" onclick="openCity(event, 'playlist')">playlists</button>
+  <button class="tablinks" onclick="openCity(event, 'about')">about</button>
+  <button class="tablinks" onclick="openCity(event, 'allvi')">all videos</button>
+</div>
+
+<div id="rev" class="tabcontent">
+<!--  https://www.youtube.com/playlist?list=PL3H6z037pboEolwKQ8OqJx3quj_R3JvJf -->
+<h2 class="whh1">recommended videos</h2>
+
+
+</div>
+
+<div id="stat" class="tabcontent">
+  <div class="youtube-button">
+    <i style=" margin-right: 12px;" class="fab fa-youtube"></i>  
+<p><span style="margin-right: 4px;" class="sub-count"></span>subscribers</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+<script src="assets/api/youtube/sub-count//app.js"></script>
+</div>
+
+<div id="allvi" class="tabcontent">
+  <h2 class="whh1" >all videos from </h2>
+  <ul style="list-style-type: none; ">
+    <li class="texttra">... </li>
+    <li class="texttra">...</li> 
+  </ul>
+  <template type="markdown">
+   
+<p><button class="tablinks" onclick="openCity(event, 'allvit')">all videos</button></p>
+    
+<!--videos--> <!---
+
+  -->
+<iframe src="https://www.youtube.com/c//videos" ></iframe>
+
+  </template>
+
+</div>
+
+<div id="home" class="tabcontent">
+  <ul style="list-style-type: none; ">
+    <li class="texttra">... </li>
+  </ul>
+  
+
+</div>
+
+<div id="about" class="tabcontent">
+ <h2 class="whh1">the youtubers Description</h2>
+ <ul style="list-style-type: none; ">
+   <li class="texttra">... </li>
+   <li class="texttra">...</li>
+ </ul>
+ 
+<article>
+  <h2 class="whh1">Description</h2>
+  <p class="whh1" >
+    </p>
+    <p class="whh1"></p>
+</article>
+<ul style="list-style-type: none; ">
+  <li class="texttra">... </li>
+  <li class="texttra">...</li>
+</ul>
+<article>
+  <h2 class="whh1" >Stats</h2>
+  <p class="whh1" ></p>
+    <p class="whh1" ></p>
+</article>
+</div>
+
+<div id="playlist" class="tabcontent">
+  <h2 class="whh1"> playlists</h2>
+  <ul style="list-style-type: none; ">
+    <li class="texttra">... </li>
+    <li class="texttra">...</li>
+  </ul>
+<h3 class="whh1"></h3>
+ 
+  <ul style="list-style-type: none; ">
+    <li class="texttra">... </li>
+    <li class="texttra">...</li>
+  </ul>
+
+  <h3 class="whh1" ></h3>
+  
+  <ul style="list-style-type: none; ">
+    <li class="texttra">... </li>
+    <li class="texttra">...</li>
+  </ul>
+  <h3 class="whh1"></h3>
+
+ 
+</div>
+
+
+<div id="allvit" class="tabcontent" style="background-color: #fff;">
+  <template type="markdown">
+   
+
+  </template>
+</div>
+
+
+<script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js" charset="utf-8"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js" charset="utf-8"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/javascript.min.js" charset="utf-8"></script>
+<script src="../../js/md_html.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  markedInHtml.init()
+</script>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
     </div>
 
     <script type="text/javascript">
