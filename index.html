@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <link rel="SHORTCUT ICON" href="images/ussr.ico" type="image/x-icon" />
     <link rel="ICON" href="images/ussr.ico" type="image/ico" />
+<!-- <link rel="stylesheet" href="new.css"> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVW7X9D7LL"></script>
@@ -57,8 +58,8 @@
         <a href="content/tech/doc.html"><i class="fas fa-th"></i><span>docs & articals</span></a>
         <a href="content/tech/vid.html"><i class="fas fa-info-circle"></i><span>Vids</span></a>
        
-      </div>
-    </div>
+      </div> 
+    </div >
     <!--mobile navigation bar end-->
     <!--sidebar start-->
     <div class="sidebar">
@@ -68,17 +69,28 @@
       </div> <!--icons -->
       <a href="content/channel.html"><i class="fab fa-youtube"></i><span>youtube channels</span></a>
       <a href="content/other/index.html" ><i  class="fas fa-question-circle"></i><span>other topics</span></a>
-      <p>history</p>
+      <p><a style="text-align: left; display: unset; padding: 25px auto; align-items: left;" href="content/histo/histro.html">history</a></p>
       <a href="content/histo/war.html"><i class="fas fa-fighter-jet"></i><span>wars</span></a>
       <a href="content/histo/vid.html"><i class="fas fa-play"></i><span>vids</span></a>
       <a href="content/histo/abook.html"><i class="fas fa-microphone"></i><span>books & audiobooks</span></a>
-      <p>coding</p>
+      <p><a style="text-align: left; display: unset; padding: 25px auto;" href="content/code/code.html">coding</a></p>
       <a href="content/code/lang.html"><i class="fas fa-java"></i><span>Launguages</span></a>
       <a href="content/code/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
       <a href="content/code/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
-      <p>tech</p>
+      <p><a style="text-align: left; margin-right: 20px; display: unset; padding: 25px auto;" href="content/tech/tech.html">tech</a></p>
       <a href="content/tech/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
       <a href="content/tech/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Sub Item 01</a>
+          <a href="#" class="sub-item">Sub Item 02</a>
+          <a href="#" class="sub-item">Sub Item 03</a>
+        </div>
+      </div>
+
+
+      
     </div>
     <!--sidebar end-->
 
@@ -86,13 +98,22 @@
     <p class="content-text"> this a website that archives history from all periods and tech coding and many other topics
     </p>
     <h3  style="color: red;"><b>disclaimer</b></h3>
-<p class="content-text">this site is open source at <a  href="https://github.com/githubb11/HISTORY-archive" target="_blank">github</a> so please don't try and inspect it on the site</p>
 
+<a href="coding-website/index.html">TESTING</a>
 <img src="images/hp1.jpeg" alt="soilder marching" style="width: 550px; height: 500px; position: absolute; align-items: center;">
     </div>
 
     <script type="text/javascript">
     $(document).ready(function(){
+
+ //jquery for toggle sub menus
+ $('.sub-btn').click(function(){
+  $(this).next('.sub-menu').slideToggle();
+  $(this).find('.dropdown').toggleClass('rotate');
+});
+
+
+
       $('.nav_btn').click(function(){
         $('.mobile_nav_items').toggleClass('active');
       });
