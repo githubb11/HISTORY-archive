@@ -442,3 +442,69 @@ div.scrollmenu a:hover {
 
 
 /*  responsive nav bar*/
+
+
+
+
+
+
+
+
+/* small nav bar */
+.smmnavbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.smmnavbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.smmsubnav {
+  float: left;
+  overflow: hidden;
+}
+
+.smmsubnav .smmsubnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.smmnavbar a:hover, .smmsubnav:hover .smmsubnavbtn {
+  background-color: red;
+}
+
+.smmsubnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.smmsubnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.smmsubnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.smmsubnav:hover .smmsubnav-content {
+  display: block;
+}
