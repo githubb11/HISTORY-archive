@@ -570,7 +570,7 @@ You can find our main website here: https://www.battleorder.org
 
 stats = {
 
-oined Jun 23, 2019
+joined Jun 23, 2019
 8,437,652 views
 }
 
