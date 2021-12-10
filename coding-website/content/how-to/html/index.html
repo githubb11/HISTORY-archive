@@ -6,6 +6,8 @@
     <title>Responsive Sidebar Dashboard Template</title>
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="../../../css/searchbox.css"
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
@@ -54,7 +56,7 @@
     <!--sidebar end-->
 
     <div class="content">
-     
+     <!--
       <div class="navbar">
         <a href="#home"><i class="fas fa-cubes"></i></a>
         <a href="#"><i class="fas fa-home"></i></a>
@@ -161,13 +163,45 @@
         </div> 
         
        
-      </div>
+      </div> -->
      
       <div class="card">
-       
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+        <ul id="myUL">
+          <li><a href="#">Adele</a></li>
+          <li><a href="#">Agnes</a></li>
+        
+          <li><a href="#">Billy</a></li>
+          <li><a href="#">Bob</a></li>
+        
+          <li><a href="#">Calvin</a></li>
+          <li><a href="#">Christina</a></li>
+          <li><a href="#">Cindy</a></li>
+        </ul>
       </div>
      
 
+      
+      
+      <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
 
 
 
