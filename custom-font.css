@@ -1,0 +1,629 @@
+@font-face {
+  font-family: 'HISTORY';
+  src:  url('assets/fonts/HISTORY.eot?8ktp2f');
+  src:  url('assets/fonts/HISTORY.eot?8ktp2f#iefix') format('embedded-opentype'),
+    url('assets/fonts/HISTORY.ttf?8ktp2f') format('truetype'),
+    url('assets/fonts/HISTORY.woff?8ktp2f') format('woff'),
+    url('assets/fonts/HISTORY.svg?8ktp2f#HISTORY') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'HISTORY' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.arcdebian:before {
+  content: "\e900";
+  color: #a81d33;
+}
+.arcdjango:before {
+  content: "\e901";
+}
+.arcgit:before {
+  content: "\e902";
+  color: #f05032;
+}
+.arcgitlab:before {
+  content: "\e903";
+  color: #fca121;
+}
+.arcgo:before {
+  content: "\e904";
+  color: #00add8;
+}
+.arcocaml:before {
+  content: "\e905";
+  color: #ec6813;
+}
+.arcscala:before {
+  content: "\e906";
+  color: #dc322f;
+}
+.arcstackoverflow1:before {
+  content: "\e907";
+  color: #fe7a16;
+}
+.arcswift:before {
+  content: "\e908";
+  color: #fa7343;
+}
+.arcubuntu:before {
+  content: "\e909";
+  color: #e95420;
+}
+.arcarchlinux:before {
+  content: "\e90a";
+  color: #1793d1;
+}
+.arcaudible:before {
+  content: "\e90b";
+  color: #f8991c;
+}
+.arcawesomewm:before {
+  content: "\e90c";
+  color: #535d6c;
+}
+.arcdot-net:before {
+  content: "\e90d";
+  color: #5c2d91;
+}
+.arcflask:before {
+  content: "\e90e";
+}
+.arcgnome:before {
+  content: "\e90f";
+  color: #4a86cf;
+}
+.arcgradle:before {
+  content: "\e910";
+}
+.arclinode:before {
+  content: "\e911";
+  color: #00a95c;
+}
+.arcplaystation:before {
+  content: "\e912";
+  color: #003791;
+}
+.arcplaystation3:before {
+  content: "\e913";
+  color: #003791;
+}
+.arcplaystation4:before {
+  content: "\e914";
+  color: #003791;
+}
+.arcadobe:before {
+  content: "\e915";
+  color: #f00;
+}
+.arcangular:before {
+  content: "\e916";
+  color: #dd0031;
+}
+.arcblender:before {
+  content: "\e917";
+  color: #f5792a;
+}
+.arcdart:before {
+  content: "\e918";
+  color: #0175c2;
+}
+.arcdell:before {
+  content: "\e919";
+  color: #007db8;
+}
+.arcdiscord:before {
+  content: "\e91a";
+  color: #7289da;
+}
+.arcdocker:before {
+  content: "\e91b";
+  color: #1488c6;
+}
+.arcduckduckgo:before {
+  content: "\e91c";
+  color: #de5833;
+}
+.arceclipseide:before {
+  content: "\e91d";
+  color: #2c2255;
+}
+.arcfedora:before {
+  content: "\e91e";
+  color: #294172;
+}
+.arcgimp:before {
+  content: "\e91f";
+  color: #5c5543;
+}
+.archp:before {
+  content: "\e920";
+  color: #0096d6;
+}
+.arcinkscape:before {
+  content: "\e921";
+}
+.arcintel:before {
+  content: "\e922";
+  color: #0071c5;
+}
+.arcios:before {
+  content: "\e923";
+}
+.arclinuxmint:before {
+  content: "\e924";
+  color: #87cf3e;
+}
+.arclua:before {
+  content: "\e925";
+  color: #2c2d72;
+}
+.arcmanjaro:before {
+  content: "\e926";
+  color: #35bf5c;
+}
+.arcmicrosoftaccess:before {
+  content: "\e927";
+  color: #ba141a;
+}
+.arcmicrosoftazure:before {
+  content: "\e928";
+  color: #0089d6;
+}
+.arcmicrosoftexcel:before {
+  content: "\e929";
+  color: #217346;
+}
+.arcmicrosoftoffice:before {
+  content: "\e92a";
+  color: #e74025;
+}
+.arcmicrosoftonenote:before {
+  content: "\e92b";
+  color: #80397b;
+}
+.arcmicrosoftoutlook:before {
+  content: "\e92c";
+  color: #0072c6;
+}
+.arcmicrosoftpowerpoint:before {
+  content: "\e92d";
+  color: #d24726;
+}
+.arcmicrosoftteams:before {
+  content: "\e92e";
+  color: #6264a7;
+}
+.arcmicrosoftword:before {
+  content: "\e92f";
+  color: #2b579a;
+}
+.arcnpm:before {
+  content: "\e930";
+  color: #cb3837;
+}
+.arcnuget:before {
+  content: "\e931";
+  color: #004880;
+}
+.arcnvidia:before {
+  content: "\e932";
+  color: #76b900;
+}
+.arcpostgresql:before {
+  content: "\e933";
+  color: #336791;
+}
+.arcteamviewer:before {
+  content: "\e934";
+  color: #0e8ee9;
+}
+.arctodoist:before {
+  content: "\e935";
+  color: #e44332;
+}
+.arctypescript:before {
+  content: "\e936";
+  color: #007acc;
+}
+.arcunity:before {
+  content: "\e937";
+}
+.arcvisualstudio:before {
+  content: "\e938";
+  color: #5c2d91;
+}
+.arcvisualstudiocode:before {
+  content: "\e939";
+  color: #007acc;
+}
+.arckotlin:before {
+  content: "\e93a";
+  color: #0095d5;
+}
+.arcicons8-powershell .path1:before {
+  content: "\e93b";
+  color: rgb(2, 119, 189);
+}
+.arcicons8-powershell .path2:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+.arcicons8-ruby-programming-language:before {
+  content: "\e93d";
+}
+.arcicons8-swift:before {
+  content: "\e93e";
+}
+.arcicons8-autohotkey:before {
+  content: "\e93f";
+}
+.arcicons8-cplus .path1:before {
+  content: "\e940";
+  color: rgb(0, 84, 157);
+}
+.arcicons8-cplus .path2:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(0, 134, 212);
+}
+.arcicons8-cplus .path3:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.arcicons8-cplus .path4:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(0, 117, 192);
+}
+.arcicons8-cplus .path5:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.arcicons8-cplus .path6:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.arcicons8-c-programming .path1:before {
+  content: "\e946";
+  color: rgb(40, 53, 147);
+}
+.arcicons8-c-programming .path2:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(92, 107, 192);
+}
+.arcicons8-c-programming .path3:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.arcicons8-c-programming .path4:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(57, 73, 171);
+}
+.arcicons8-c-sharp-logo:before {
+  content: "\e94a";
+}
+.arcenlarge:before {
+  content: "\e989";
+}
+.arcamazon:before {
+  content: "\ea87";
+}
+.arcgoogle-drive:before {
+  content: "\ea8f";
+}
+.arcwhatsapp:before {
+  content: "\ea93";
+}
+.arcspotify:before {
+  content: "\ea94";
+}
+.arcsteam2:before {
+  content: "\eaad";
+}
+.arcdropbox:before {
+  content: "\eaae";
+}
+.arcgithub:before {
+  content: "\eab0";
+}
+.arctrello:before {
+  content: "\eab3";
+}
+.arcreddit:before {
+  content: "\eac6";
+}
+.archackernews:before {
+  content: "\eac7";
+}
+.arcwikipedia:before {
+  content: "\eac8";
+}
+.arcstackoverflow:before {
+  content: "\ead0";
+}
+.arcchrome:before {
+  content: "\ead9";
+}
+.arcfirefox:before {
+  content: "\eada";
+}
+.arcIE:before {
+  content: "\eadb";
+}
+.arclibreoffice:before {
+  content: "\eae3";
+}
+.arcplay:before {
+  content: "\e94b";
+}
+.arcconnection:before {
+  content: "\e94c";
+}
+.arcdatabase:before {
+  content: "\e964";
+}
+.arcpower-cord:before {
+  content: "\e9b7";
+}
+.arcyoutube2:before {
+  content: "\ea9e";
+}
+.arcequalizer2:before {
+  content: "\e993";
+}
+.arccog:before {
+  content: "\e994";
+}
+.arccogs:before {
+  content: "\e995";
+}
+.arclink:before {
+  content: "\e9cb";
+}
+.arconedrive:before {
+  content: "\eaaf";
+}
+.arctux:before {
+  content: "\eabd";
+}
+.arcappleinc:before {
+  content: "\eabe";
+}
+.arcandroid:before {
+  content: "\eac0";
+}
+.arcwindows8:before {
+  content: "\eac2";
+}
+.arcpaypal:before {
+  content: "\ead8";
+}
+.arcextension:before {
+  content: "\e94d";
+}
+.arclanguage:before {
+  content: "\e94e";
+}
+.arclaunch:before {
+  content: "\e94f";
+}
+.arcforum:before {
+  content: "\e950";
+}
+.arclightbulb:before {
+  content: "\e951";
+}
+.arcstorage:before {
+  content: "\e952";
+}
+.arcdevice_thermostat:before {
+  content: "\e953";
+}
+.arcattach_money:before {
+  content: "\e954";
+}
+.arcformat_color_fill:before {
+  content: "\e955";
+}
+.arcformat_color_text:before {
+  content: "\e956";
+}
+.arcmonetization_on:before {
+  content: "\e957";
+}
+.arccreate_new_folder:before {
+  content: "\e958";
+}
+.arckeyboard:before {
+  content: "\e959";
+}
+.arcsecurity:before {
+  content: "\e95a";
+}
+.arcaudiotrack:before {
+  content: "\e95b";
+}
+.arccolorize:before {
+  content: "\e95c";
+}
+.arcfilter_1:before {
+  content: "\e95d";
+}
+.arcfilter_2:before {
+  content: "\e95e";
+}
+.arcfilter_3:before {
+  content: "\e95f";
+}
+.arcfilter:before {
+  content: "\e960";
+}
+.arcfilter_4:before {
+  content: "\e961";
+}
+.arcfilter_5:before {
+  content: "\e962";
+}
+.arcfilter_6:before {
+  content: "\e963";
+}
+.arcfilter_7:before {
+  content: "\e965";
+}
+.arcfilter_8:before {
+  content: "\e966";
+}
+.arcfilter_9:before {
+  content: "\e967";
+}
+.arcfilter_9_plus:before {
+  content: "\e968";
+}
+.arcflash_on:before {
+  content: "\e969";
+}
+.arcpriority_high:before {
+  content: "\e96a";
+}
+.arcperson:before {
+  content: "\e96b";
+}
+.arcperson_add:before {
+  content: "\e96c";
+}
+.arcaccount_circle:before {
+  content: "\e96d";
+}
+.arcsettings_input_hdmi:before {
+  content: "\e96e";
+}
+.arcthumbs_up_down:before {
+  content: "\e96f";
+}
+.arcfingerprint:before {
+  content: "\e970";
+}
+.arclocal_fire_department:before {
+  content: "\e971";
+}
+.arclocation_pin:before {
+  content: "\e972";
+}
+.arcwarning:before {
+  content: "\e973";
+}
+.arcfast_forward:before {
+  content: "\e974";
+}
+.arcfast_rewind:before {
+  content: "\e975";
+}
+.arcgames:before {
+  content: "\e976";
+}
+.archigh_quality:before {
+  content: "\e977";
+}
+.arcloop:before {
+  content: "\e978";
+}
+.arcnot_interested:before {
+  content: "\e979";
+}
+.arcforward_10:before {
+  content: "\e97a";
+}
+.arcfiber_pin:before {
+  content: "\e97b";
+}
+.arccontrol_camera:before {
+  content: "\e97c";
+}
+.arcdialpad:before {
+  content: "\e97d";
+}
+.arcclear:before {
+  content: "\e97e";
+}
+.arccontent_copy:before {
+  content: "\e97f";
+}
+.arclink1:before {
+  content: "\e980";
+}
+.arcairplanemode_on:before {
+  content: "\e981";
+}
+.arcbattery_charging_full:before {
+  content: "\e982";
+}
+.arcbluetooth:before {
+  content: "\e983";
+}
+.arccast:before {
+  content: "\e984";
+}
+.arcwatch:before {
+  content: "\e985";
+}
+.arcarrow_back_ios:before {
+  content: "\e986";
+}
+.arcarrow_forward_ios:before {
+  content: "\e987";
+}
+.arcnotifications:before {
+  content: "\e988";
+}
+.arcnotifications_none:before {
+  content: "\e98a";
+}
+.arcthumb_down_alt:before {
+  content: "\e98b";
+}
+.arcthumb_up_alt:before {
+  content: "\e98c";
+}
+.arcbuild:before {
+  content: "\e98d";
+}
+.arcadd_to_drive:before {
+  content: "\e98e";
+}
+.arcelectrical_services:before {
+  content: "\e98f";
+}
+.arcios_share:before {
+  content: "\e990";
+}
+.arcpush_pin:before {
+  content: "\e991";
+}
+.arcstar_outline:before {
+  content: "\e992";
+}
+.arcstar_rate:before {
+  content: "\e996";
+}
