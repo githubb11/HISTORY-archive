@@ -37,7 +37,7 @@ Vertical Tabs = verttab
 Hover Tabs = hovetab
 Button Group = btgroup
 Modal Box = modelbo
-coming soon page = comesp
+coming soon page = comesp done
 
 <h2 style="display: block;">Images</h2>
  image grid = imggrid
