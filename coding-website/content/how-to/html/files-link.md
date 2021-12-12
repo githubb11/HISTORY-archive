@@ -1,124 +1,117 @@
 UI elements
 Icon Bar = iconb
-Tabs</a>
-Accordion</a>
-Menu Icon</a>
-Simple Password login</a>
-Sticky Navbar</a>
-Cascading Dropdown List</a>
-Clickable Dropdown</a>
-Hoverable Dropdown</a>
-Shrink Navigation Menu on Scroll</>
-Vertical Button Group
-Mobile Navigation Menu
-Mega Menu</a>
-Responsive Header</a>
-Sticky Social Bar</a>
-ill Navigation</a>
-CSS Pagination
-Collapse Sidepanel</a>
-ollapse Sidepanel with icons</a>
-Collapse Sidebar</a>
-Collapse Sidebar icon bar</a>
-Collapse Sidebar icon bar v2</a>
-Curtain Menu</a>
-Right Aligned Menu Buttons
-Bottom Border Nav Links</>
-Responsive Bottom Navigation</a>
-Vertical Menu</a>
-<a target="_top" href="" style="display: block;">Collapse Sidepanel with icons</a>
-<a target="_top" href="" style="display: block;">Side Navigation Buttons</a>
-<a target="_top" href="" style="display: block;">Side Navigation Buttons</a>
-<a target="_top" href="" style="display: block;">Off-Canvas Menu</a>
-<a target="_top" href="" style="display: block;">Dropdown Navbar</a>
-<a target="_top" href="" style="display: block;">scroll tab buttons</a>
-<a target="_top" href="" style="display: block;">Tab Headers</a>
-<a target="_top" href="" style="display: block;">Vertical Tabs</a>
-<a target="_top" href="" style="display: block;">Hover Tabs</a>
-<a target="_top" href="" style="display: block;">Button Group</a>
-<a target="_top" href="" style="display: block;">Modal Box</a>
+Tabs = tabh
+Accordion = accord
+Menu Icon = micon
+Simple Password login = pwslog
+Sticky Navbar = stnav
+Cascading Dropdown List = cassdli
+Clickable Dropdown = cassdr
+Hoverable Dropdown = hoverdr
+Shrink Navigation Menu on Scroll = shnmosr
+Vertical Button Group = vebgro
+Mobile Navigation Menu = mnavmenu
+Mega Menu = megam
+Responsive Header = responsh
+Sticky Social Bar = ssbar
+pill Navigation = pillnav
+CSS Pagination = csspill
+Collapse Sidepanel = cosidepan
+collapse Sidepanel with icons = cosidepanwi
+Collapse Sidebar = collsidebar
+Collapse Sidebar icon bar = csideibv2
+Collapse Sidebar icon bar v2 = csideibv2
+Curtain Menu = certmen
+Right Aligned Menu Buttons = ramenub
+Bottom Border Nav Links = bbnavli
+Responsive Bottom Navigation = resbnav
+Vertical Menu = vermenu
+Collapse Sidepanel with icons = csidewic
+Side Navigation Buttons = sidenavb
+Side Navigation Buttons
+Off-Canvas Menu = offcanmen
+Dropdown Navbar = dropnav
+scroll tab buttons = scrtabb
+Tab Headers = tabhead
+Vertical Tabs = verttab
+Hover Tabs = hovetab
+Button Group = btgroup
+Modal Box = modelbo
 
 <h2 style="display: block;">Images</h2>
-<a target="_top" href="" style="display: block;">image grid</a>
-<a target="_top" href="" style="display: block;">rounded image</a>
-<a target="_top" href="" style="display: block;">Slideshow Gallery</a>
-<a target="_top" href="" style="display: block;">Modal Images</a>
-<a target="_top" href="" style="display: block;">Image Grid</a>
-<a target="_top" href="" style="display: block;">Responsive Image Grid</a>
-<a target="_top" href="" style="display: block;">Tab Gallery</a>
-<a target="_top" href="" style="display: block;">Image Hover Overlay</a>
-<a target="_top" href="" style="display: block;">Image Overlay Slide</a>
-<a target="_top" href="" style="display: block;">Image Overlay Zoom</a>
-<a target="_top" href="" style="display: block;">image button</a>
-<a target="_top" href="" style="display: block;">Image Overlay Title</a>
-<a target="_top" href="" style="display: block;">Image Overlay Icon</a>
-<a target="_top" href="" style="display: block;">Add Image Effects</a>
-<a target="_top" href="" style="display: block;">Image Text</a>
-<a target="_top" href="" style="display: block;">Image Text Blocks</a>
-<a target="_top" href="" style="display: block;">Transparent image Text</a>
-<a target="_top" href="" style="display: block;">slideshow</a>
-<a target="_top" href="" style="display: block;">Full Page Image</a>
-<a target="_top" href="" style="display: block;">Form on Image</a>
-<a target="_top" href="" style="display: block;">Hero Image</a>
-<a target="_top" href="" style="display: block;">Blurred Background Image</a>
-<a target="_top" href="" style="display: block;">Change Background on Scroll</a>
-<a target="_top" href="" style="display: block;">Images Side By Side</a>
-<a target="_top" href="" style="display: block;">Avatar Images</a>
-<a target="_top" href="" style="display: block;">Responsive Images</a>
-<a target="_top" href="" style="display: block;">Center Images</a>
-<a target="_top" href="" style="display: block;">Thumbnails</a>
-<a target="_top" href="" style="display: block;">Border Around Image</a>
-<a target="_top" href="" style="display: block;">Meet The Team</a>
-<a target="_top" href="" style="display: block;">Sticky Image</a>
-<a target="_top" href="" style="display: block;">Flip an Image</a>
-<a target="_top" href="" style="display: block;">Shake an Image</a>
-<a target="_top" href="" style="display: block;">Portfolio Gallery</a>
-<a target="_top" href="" style="display: block;">Portfolio Gallery with Filtering</a>
-<a target="_top" href="" style="display: block;">Image Zoom</a>
-<a target="_top" href="" style="display: block;">Image Magnifier Glass</a>
-<a target="_top" href="" style="display: block;">Image Comparison Slider</a>
-<a target="_top" href="" style="display: block;">Favicon</a>
-<a target="_top" href="" style="display: block;">Social Media Buttons</a>
+ image grid = imggrid
+ rounded image = roundimg
+ Slideshow Gallery = imgslga
+ Modal Images = modalimg
+ Image Grid = imggrid
+ Responsive Image Grid = rimggrid
+ Tab Gallery = tabgaller
+ Image Hover Overlay = imghovov
+ Image Overlay Slide
+ Image Overlay Zoom
+ image button<
+ Image Overlay Title</a>
+ Image Overlay Icon</a>
+ Add Image Effects</a>
+ Image Text</a>
+ Image Text Blocks</a>
+ Transparent image Text</a>
+ slideshow</a>
+ Full Page Image</a>
+ Form on Image</a>
+ Hero Image</a>
+ Blurred Background Image</a>
+ Change Background on Scroll</a>
+ Images Side By Side</a>
+ Avatar Images</a>
+ Responsive Images</a>
+ Center Images</a>
+ Thumbnails</a>
+ Border Around Image</a>
+ Meet The Team</a>
+ Sticky Image</a>
+ Flip an Image</a>
+ Shake an Image</a>
+ Portfolio Gallery</a>
+ Portfolio Gallery with Filtering</a>
+ Image Zoom</a>
+ Image Magnifier Glass
+ Image Comparison Slider
+ Favicon
+ Social Media Buttons
 
 <h2 style="display: block;">Buttons</h2>
-<a target="_top" href="" style="display: block;">Outline Buttons</a>
-<a target="_top" href="" style="display: block;">Alert Buttons</a>
-<a target="_top" href="" style="display: block;">Split Buttons</a>
-<a target="_top" href="" style="display: block;">Animated Buttons</a>
-<a target="_top" href="" style="display: block;">Fading Buttons</a>
-<a target="_top" href="" style="display: block;">Button on Image</a>
-<a target="_top" href="" style="display: block;">Read More Read Less</a>
-<a target="_top" href="" style="display: block;">Loading Buttons</a>
-<a target="_top" href="" style="display: block;">Download Button</a>
-<a target="_top" href="" style="display: block;">Pill Buttons</a>
-<a target="_top" href="" style="display: block;">Notification Button</a>
-<a target="_top" href="" style="display: block;">Icon Buttons</a>
-<a target="_top" href="" style="display: block;">Next and Previous Buttons</a>
-<a target="_top" href="" style="display: block;">More Button in Navbar</a>
-<a target="_top" href="" style="display: block;">Block Buttons</a>
-<a target="_top" href="" style="display: block;">Text Buttons</a>
-<a target="_top" href="" style="display: block;">Scroll To Top Button</a>
-<a target="_top" href="" style="display: block;">Scroll To bottom Button</a>
+ Outline Buttons</a>
+ Alert Buttons</a>
+ Split Buttons</a>
+ Animated Buttons</a>
+ Fading Buttons</a>
+ Button on Image</a>
+ Read More Read Less
+ Loading Buttons
+ Download Button
+ Pill Buttons
+ Notification Button
+ Icon Buttons
+ Next and Previous Buttons
+ More Button in Navbar
+ Block Buttons
+ Text Buttons
+ Scroll To Top Button
+ Scroll To bottom Button
 
 <h2 style="display: block;">popups</h2>
-<a target="_top" href="" style="display: block;">hover popup</a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
+ hover popup
+
 
 
 <h2 style="display: block;">file operations</h2>
-<a target="_top" href="" style="display: block;">access file</a>
-<a target="_top" href="" style="display: block;">emded pdf</a>
-<a target="_top" href="" style="display: block;">download file</a>
-<a target="_top" href="" style="display: block;">embed pdf no download</a>
-<a target="_top" href="" style="display: block;">import css</a>
-<a target="_top" href="" style="display: block;">embed css</a>
-<a target="_top" href="" style="display: block;">embed js</a>
-<a target="_top" href="" style="display: block;">embed markdown</a>
-<a target="_top" href="" style="display: block;">html previewer</a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
+ access file
+ emded pdf = embpdf
+ download file = downloadfi
+ embed pdf no download = embpdfnd
+ import css = impcss
+ embed css = emfcss
+ embed js = embjs
+ embed markdown = embmd
+ html previewer 
