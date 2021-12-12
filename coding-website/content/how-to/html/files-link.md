@@ -1,5 +1,5 @@
 UI elements
-Icon Bar
+Icon Bar = iconb
 Tabs</a>
 Accordion</a>
 Menu Icon</a>
