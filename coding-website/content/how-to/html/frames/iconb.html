@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title></title>
+<title>howto Accordion</title>
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="436">
 <meta property="og:image:height" content="228">
 <link rel="icon" href="" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="../../../../style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 
-<link rel="stylesheet" href="../../../css/mainp.css">
+<link rel="stylesheet" href="../../../../css/mainp.css">
 
 
 <script data-cfasync="false" type="text/javascript">
@@ -20,65 +21,6 @@ k42 = true;
 
 </script>
 
-<script async="" data-cfasync="false" src="./src/loader.js" type="text/javascript"></script>
-<script type="text/javascript">
-var stickyadstatus = "";
-function fix_stickyad() {
-  document.getElementById("stickypos").style.position = "sticky";
-  var elem = document.getElementById("stickyadcontainer");
-  if (!elem) {return false;}
-  if (document.getElementById("skyscraper")) {
-    var skyWidth = Number(cc_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
-    }
-  else {
-    var skyWidth = Number(cc_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
-  }
-  elem.style.width = skyWidth + "px";
-  if (window.innerWidth <= 992) {
-    elem.style.position = "";
-    elem.style.top = stickypos + "px";
-    return false;
-  }
-  var stickypos = document.getElementById("stickypos").offsetTop;
-  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-  var adHeight = Number(cc_getStyleValue(elem, "height").replace("px", ""));
-  if (stickyadstatus == "") {
-    if ((stickypos - docTop) < 60) {
-      elem.style.position = "fixed";
-      elem.style.top = "60px";
-      stickyadstatus = "sticky";
-      document.getElementById("stickypos").style.position = "sticky";
-
-    }
-  } else {
-    if ((docTop + 60) - stickypos < 0) {  
-      elem.style.position = "";
-      elem.style.top = stickypos + "px";
-      stickyadstatus = "";
-      document.getElementById("stickypos").style.position = "static";
-    }
-  }
-  if (stickyadstatus == "sticky") {
-    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
-      elem.style.position = "absolute";
-      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
-      document.getElementById("stickypos").style.position = "static";
-    } else {
-        elem.style.position = "fixed";
-        elem.style.top = "60px";
-        stickyadstatus = "sticky";
-        document.getElementById("stickypos").style.position = "sticky";
-    }
-  }
-}
-function cc_getStyleValue(elmnt,style) {
-  if (window.getComputedStyle) {
-    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
-  } else {
-    return elmnt.currentStyle[style];
-  }
-}
-</script>
 <style>
 
 .offcanvas {
@@ -148,14 +90,14 @@ function cc_getStyleValue(elmnt,style) {
   <div style="overflow:auto;">
     <div class="cc-bar cc-left" style="width:100%;overflow:hidden;height:44px">
       <a href="javascript:void(0);" class="topnav-icons fa fa-menu cc-hide-large cc-left cc-bar-item cc-button" onclick="open_menu()" title="Menu"></a>
+      <a href="../../../../../index.html" class="topnav-icons fas fa-home cc-left cc-bar-item cc-button" title="Home"></a>
       <a href="../../../../index.html" class="topnav-icons fas fa-home cc-left cc-bar-item cc-button" title="Home"></a>
-      <a href="../../../index.html" class="topnav-icons fas fa-home cc-left cc-bar-item cc-button" title="Home"></a>
       <a class="cc-bar-item cc-button" href="" title="HTML" style="padding-left:18px!important;padding-right:18px!important;">HTML</a>
-      <a class="cc-bar-item cc-button" href="../../home/powershell/index.html" title="powershell">powershell</a>
+      <a class="cc-bar-item cc-button" href="../../../home/powershell/index.html" title="powershell">powershell</a>
       <a class="cc-bar-item cc-button" href="" title="how to">how to</a>
       <a class="cc-bar-item cc-button" href="" title="docs">docs</a>
       <a class="cc-bar-item cc-button" href="" title="lang">lang</a>
-      <a class="cc-bar-item cc-button" href="../../home/python/index.html" title="python">python</a>
+      <a class="cc-bar-item cc-button" href="../../../home/python/index.html" title="python">python</a>
       <a class="cc-bar-item cc-button" href="" title=""></a>
       <a class="cc-bar-item cc-button active" href="" title=""></a>
       <a class="cc-bar-item cc-button" href="" title=""></a>
@@ -314,38 +256,38 @@ function filterContent(elmnt) {
 <a target="_top" href="rimggrid.html" style="display: block;">Responsive Image Grid</a>
 <a target="_top" href="tabgaller.html" style="display: block;">Tab Gallery</a>
 <a target="_top" href="imghovov.html" style="display: block;">Image Hover Overlay</a>
-<a target="_top" href="" style="display: block;">Image Overlay Slide</a>
-<a target="_top" href="" style="display: block;">Image Overlay Zoom</a>
-<a target="_top" href="" style="display: block;">image button</a>
-<a target="_top" href="" style="display: block;">Image Overlay Title</a>
-<a target="_top" href="" style="display: block;">Image Overlay Icon</a>
-<a target="_top" href="" style="display: block;">Add Image Effects</a>
-<a target="_top" href="" style="display: block;">Image Text</a>
-<a target="_top" href="" style="display: block;">Image Text Blocks</a>
-<a target="_top" href="" style="display: block;">Transparent image Text</a>
-<a target="_top" href="" style="display: block;">slideshow</a>
-<a target="_top" href="" style="display: block;">Full Page Image</a>
-<a target="_top" href="" style="display: block;">Form on Image</a>
-<a target="_top" href="" style="display: block;">Hero Image</a>
-<a target="_top" href="" style="display: block;">Blurred Background Image</a>
-<a target="_top" href="" style="display: block;">Change Background on Scroll</a>
-<a target="_top" href="" style="display: block;">Images Side By Side</a>
-<a target="_top" href="" style="display: block;">Avatar Images</a>
-<a target="_top" href="" style="display: block;">Responsive Images</a>
-<a target="_top" href="" style="display: block;">Center Images</a>
-<a target="_top" href="" style="display: block;">Thumbnails</a>
-<a target="_top" href="" style="display: block;">Border Around Image</a>
-<a target="_top" href="" style="display: block;">Meet The Team</a>
-<a target="_top" href="" style="display: block;">Sticky Image</a>
-<a target="_top" href="" style="display: block;">Flip an Image</a>
-<a target="_top" href="" style="display: block;">Shake an Image</a>
-<a target="_top" href="" style="display: block;">Portfolio Gallery</a>
-<a target="_top" href="" style="display: block;">Portfolio Gallery with Filtering</a>
-<a target="_top" href="" style="display: block;">Image Zoom</a>
-<a target="_top" href="" style="display: block;">Image Magnifier Glass</a>
-<a target="_top" href="" style="display: block;">Image Comparison Slider</a>
-<a target="_top" href="" style="display: block;">Favicon</a>
-<a target="_top" href="" style="display: block;">Social Media Buttons</a>
+<a target="_top" href="imgovsl.html" style="display: block;">Image Overlay Slide</a>
+<a target="_top" href="imgovzoom.html" style="display: block;">Image Overlay Zoom</a>
+<a target="_top" href="imgbutt.html" style="display: block;">image button</a>
+<a target="_top" href="imgoverti.html" style="display: block;">Image Overlay Title</a>
+<a target="_top" href="imgoverico.html" style="display: block;">Image Overlay Icon</a>
+<a target="_top" href="aimgeff.html" style="display: block;">Add Image Effects</a>
+<a target="_top" href="imgtext.html" style="display: block;">Image Text</a>
+<a target="_top" href="imgtextbl.html" style="display: block;">Image Text Blocks</a>
+<a target="_top" href="transimgt.html" style="display: block;">Transparent image Text</a>
+<a target="_top" href="imgslid.html" style="display: block;">slideshow</a>
+<a target="_top" href="fullpimg.html" style="display: block;">Full Page Image</a>
+<a target="_top" href="formoimg.html" style="display: block;">Form on Image</a>
+<a target="_top" href="heroimg.html" style="display: block;">Hero Image</a>
+<a target="_top" href="blurbimg.html" style="display: block;">Blurred Background Image</a>
+<a target="_top" href="blurbimg.html" style="display: block;">Change Background on Scroll</a>
+<a target="_top" href="cbackonsc.html" style="display: block;">Images Side By Side</a>
+<a target="_top" href="avatimg.html" style="display: block;">Avatar Images</a>
+<a target="_top" href="respoimg.html" style="display: block;">Responsive Images</a>
+<a target="_top" href="centimg.html" style="display: block;">Center Images</a>
+<a target="_top" href="imgthum.html" style="display: block;">Thumbnails</a>
+<a target="_top" href="imgborai.html" style="display: block;">Border Around Image</a>
+<a target="_top" href="imgmtt.html" style="display: block;">Meet The Team</a>
+<a target="_top" href="stickyimg.html" style="display: block;">Sticky Image</a>
+<a target="_top" href="flipimg.html" style="display: block;">Flip an Image</a>
+<a target="_top" href="shakeimg.html" style="display: block;">Shake an Image</a>
+<a target="_top" href="imgportg.html" style="display: block;">Portfolio Gallery</a>
+<a target="_top" href="imgportgf.html" style="display: block;">Portfolio Gallery with Filtering</a>
+<a target="_top" href="imgovzoom.html" style="display: block;">Image Zoom</a>
+<a target="_top" href="imgmaggl.html" style="display: block;">Image Magnifier Glass</a>
+<a target="_top" href="imgcompsl.html" style="display: block;">Image Comparison Slider</a>
+<a target="_top" href="favicon.html" style="display: block;">Favicon</a>
+<a target="_top" href="socailmb.html" style="display: block;">Social Media Buttons</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
@@ -356,24 +298,24 @@ function filterContent(elmnt) {
 <br style="display: block;">
 
 <h2 style="display: block;">Buttons</h2>
-<a target="_top" href="" style="display: block;">Outline Buttons</a>
-<a target="_top" href="" style="display: block;">Alert Buttons</a>
-<a target="_top" href="" style="display: block;">Split Buttons</a>
-<a target="_top" href="" style="display: block;">Animated Buttons</a>
-<a target="_top" href="" style="display: block;">Fading Buttons</a>
-<a target="_top" href="" style="display: block;">Button on Image</a>
-<a target="_top" href="" style="display: block;">Read More Read Less</a>
-<a target="_top" href="" style="display: block;">Loading Buttons</a>
-<a target="_top" href="" style="display: block;">Download Button</a>
-<a target="_top" href="" style="display: block;">Pill Buttons</a>
-<a target="_top" href="" style="display: block;">Notification Button</a>
-<a target="_top" href="" style="display: block;">Icon Buttons</a>
-<a target="_top" href="" style="display: block;">Next and Previous Buttons</a>
-<a target="_top" href="" style="display: block;">More Button in Navbar</a>
-<a target="_top" href="" style="display: block;">Block Buttons</a>
-<a target="_top" href="" style="display: block;">Text Buttons</a>
-<a target="_top" href="" style="display: block;">Scroll To Top Button</a>
-<a target="_top" href="" style="display: block;">Scroll To bottom Button</a>
+<a target="_top" href="outlbut.html" style="display: block;">Outline Buttons</a>
+<a target="_top" href="alertbut.html" style="display: block;">Alert Buttons</a>
+<a target="_top" href="splibut.html" style="display: block;">Split Buttons</a>
+<a target="_top" href="animatbut.html" style="display: block;">Animated Buttons</a>
+<a target="_top" href="fadbut.html" style="display: block;">Fading Buttons</a>
+<a target="_top" href="butimg.html" style="display: block;">Button on Image</a>
+<a target="_top" href="readmlbut.html" style="display: block;">Read More Read Less</a>
+<a target="_top" href="loadbut.html" style="display: block;">Loading Buttons</a>
+<a target="_top" href="downlbut.html" style="display: block;">Download Button</a>
+<a target="_top" href="pillbut.html" style="display: block;">Pill Buttons</a>
+<a target="_top" href="notfbut.html" style="display: block;">Notification Button</a>
+<a target="_top" href="icobut.html" style="display: block;">Icon Buttons</a>
+<a target="_top" href="neprbut.html" style="display: block;">Next and Previous Buttons</a>
+<a target="_top" href="morebutnav.html" style="display: block;">More Button in Navbar</a>
+<a target="_top" href="blocbut.html" style="display: block;">Block Buttons</a>
+<a target="_top" href="textbut.html" style="display: block;">Text Buttons</a>
+<a target="_top" href="srttbut.html" style="display: block;">Scroll To Top Button</a>
+<a target="_top" href="srtbbut.html" style="display: block;">Scroll To bottom Button</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
@@ -410,7 +352,7 @@ function filterContent(elmnt) {
 <br style="display: block;">
 
 <h2 style="display: block;">popups</h2>
-<a target="_top" href="" style="display: block;">hover popup</a>
+<a target="_top" href="hoverpop.html" style="display: block;">hover popup</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
@@ -611,148 +553,115 @@ function filterContent(elmnt) {
   <div class="cc-row cc-white">
     <div class="cc-col l10 m12" id="main">
       
-<h1>How TO - Icon Bar Sidebar</h1>
-<div class="cc-clear nextprev">
-<a class="cc-left cc-btn" href="">❮ Previous</a>
-<a class="cc-right cc-btn" href="">Next ❯</a>
-</div>
-<hr>
-<p class="intro">Learn how to create icon bars with CSS.</p>
-<hr>
+      <h1>How TO - icon bar</h1>
+      <div class="cc-clear nextprev">
+      <a class="cc-right cc-btn" href="tabh.html">Next ❯</a>
+      </div>
+      <hr>
+      <p class="intro">Learn how to create a icon bar</p>
+      <hr>
+        <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"></div>
+      
+        <div class="icon-bar">
+          <a class="active" href="#"><i class="fa fa-home"></i></a> 
+          <a href="#"><i class="fa fa-search"></i></a> 
+          <a href="#"><i class="fa fa-envelope"></i></a> 
+          <a href="#"><i class="fa fa-globe"></i></a>
+          <a href="#"><i class="fa fa-trash"></i></a> 
+        </div>
+       
+      
+      <a target="_blank" href="../previewer/accord.html" class="cc-btn">Try it Yourself »</a>   <!-- html previewer-->
+      
+      <hr>
+      
+      <h2>Create a Collapsed Sidebar</h2>
+      <h5>Step 1) Add HTML:</h5>
+      <div class="cc-example">
+      <h3>Example</h3>
+      <div class="cc-code notranslate htmlHigh" >
+     
+      </div>
+      </div>
+      <hr>
+      <h5>Step 2) Add CSS:</h5>
+      <div class="cc-example">
+      <h3>Example</h3>
+      <div class="cc-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+      
+      
+      </div>
+      </div>
+      <hr>
 
-<div class="w3-row">
-
-  <div class="w3-col m3">
-  <p>Vertical:</p>
-  <div class="icon-barv">
-    <a class="active" href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-home"></i></a> 
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-search"></i></a> 
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-envelope"></i></a> 
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-globe"></i></a>
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-trash"></i></a> 
-  </div>
-  <p><a target="_blank" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_bar_v" class="ws-btn ws-green">Try it Yourself »</a></p>
-  </div>
-  
-  <div class="w3-col m9">
-  <p>Horizontal:</p>
-  <div class="icon-barh">
-    <a class="active" href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-home"></i></a> 
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-search"></i></a> 
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-envelope"></i></a> 
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-globe"></i></a>
-    <a href="https://www.w3schools.com/howto/howto_css_icon_bar.asp#"><i class="fa fa-trash"></i></a> 
-  </div>
-  </div>
-  <p class="w3-clearfix" style="margin-bottom:-16px">&nbsp;</p>
-  <p><a target="_blank" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_bar_h" class="ws-btn ws-green">Try it Yourself »</a></p>
-  
-  </div>
-  <p style="clear:both"></p>
-  <hr>
-
-<script>
-function openOffcanvas() {
-    document.getElementById("myOffcanvas").style.width = "250px";
-    document.getElementById("mainContent").style.marginLeft = "250px";
-}
-function closeOffcanvas() {
-    document.getElementById("myOffcanvas").style.width = "0%";
-    document.getElementById("mainContent").style.marginLeft= "0%";
-    document.body.style.backgroundColor = "white";
-    document.getElementById("myCanvasNav").style.width = "0%";
-    document.getElementById("myCanvasNav").style.opacity = "0"; 
-}
-</script>
-
-<a target="_blank" href="" class="cc-btn">Try it Yourself »</a>   <!-- html previewer-->
-
-<hr>
-
-<h2>Create a Collapsed Sidebar</h2>
-<h5>Step 1) Add HTML:</h5>
-<div class="cc-example">
-<h3>Example</h3>
-<div class="cc-code notranslate htmlHigh">
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="mySidebar"</span> class<span class="attributevaluecolor" style="color:mediumblue">="sidebar"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="javascript:void(0)"</span> 
-class<span class="attributevaluecolor" style="color:mediumblue">="closebtn"</span> onclick<span class="attributevaluecolor" style="color:mediumblue">="closeNav()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>&amp;times;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>About<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Services<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Clients<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Contact<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="main"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="openbtn"</span> onclick<span class="attributevaluecolor" style="color:mediumblue">="openNav()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>&amp;#9776; 
-  Open Sidebar<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Collapsed Sidebar<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
-  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Content...<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
-</div>
-<hr>
-<h5>Step 2) Add CSS:</h5>
-<div class="cc-example">
-<h3>Example</h3>
-<div class="cc-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-<span class="commentcolor" style="color:green">/* The sidebar menu */</span><br>.sidebar <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* 
-100% Full-height */</span><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* 0 width - change this 
-with JavaScript */</span><br>&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> fixed<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Stay in place 
-*/</span><br>&nbsp;&nbsp;z-index<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Stay on top */</span><br>&nbsp; 
-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #111<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Black*/</span><br>&nbsp;&nbsp;overflow-x<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hidden<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Disable horizontal scroll */</span><br>
-  &nbsp; 
-padding-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 60px<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Place content 60px from the top */</span><br>&nbsp; 
-transition<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0.5s<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* 0.5 second transition effect to slide in the sidebar */</span><br>
-</span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* The sidebar links */</span><br>.sidebar a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 8px 8px 8px 32px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #818181<span class="cssdelimitercolor" style="color:black">;</span></span><br>
-  &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> block<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;transition<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0.3s<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* When you mouse over the navigation links, 
-change their color */</span><br>.sidebar a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #f1f1f1<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Position and style the close button (top 
-right corner) */</span><br>.sidebar .closebtn <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
-absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
-font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 36px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* The 
-  button used to open the sidebar */</span><br>.openbtn 
-  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; cursor<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
-  pointer<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #111<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
-  color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>.openbtn:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #444<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-<br><span class="commentcolor" style="color:green">/* Style page content - use this if you want to push the page content to 
-the right when you open the side navigation */</span><br>#main <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; transition<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> margin-left .5s<span class="cssdelimitercolor" style="color:black">;</span></span> 
-  <span class="commentcolor" style="color:green">/* If you want a transition effect */</span><br>&nbsp; 
-padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* On smaller screens, where height is less than 
-450px, change the style of the sidenav (less padding and a smaller font 
-size) */</span><br>@media screen and (max-height: 450px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;&nbsp;.sidebar 
-<span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red">padding-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br>&nbsp; .sidebar a <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red">font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 18px<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br>
-</span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
-</div>
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-
-
-  <div id="adngin-mid_content-0"></div>
-  
-
-<br>
-<div class="cc-clear nextprev">
-<a class="cc-left cc-btn" href="">❮ Previous</a>
-<a class="cc-right cc-btn" href="">Next ❯</a>
-</div>
-<div id="mypagediv2" style="position:relative;text-align:center;"></div>
-<br>
-
-</div>
-<div class="cc-col l2 m12" id="right">
-
-<div class="sidesection">
-  <div id="skyscraper">
-  
-    <div id="adngin-sidebar_top-0"></div>
-  
-  </div>
-</div>
-  
-<style>
-.ribbon-vid {
-  font-size:12px;
-  font-weight:bold;
-  padding: 6px 20px;
-  left:-20px;
-  top:-10px;
-  text-align: center;
-  color:black;
-  border-radius:25px;
-}
-</style>
-
-
+      <h5>Step 2) Add javascript:</h5>
+      <div class="cc-example">
+      <h3>Example</h3>
+      <div class="cc-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+      
+      </div>
+      </div>
+      <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+      
+      
+        <div id="adngin-mid_content-0"></div>
+        
+      
+      <br>
+      <div class="cc-clear nextprev">
+      <a class="cc-left cc-btn" href="">❮ Previous</a>
+      <a class="cc-right cc-btn" href="">Next ❯</a>
+      </div>
+      <div id="mypagediv2" style="position:relative;text-align:center;"></div>
+      <br>
+      
+      </div>
+      <div class="cc-col l2 m12" id="right">
+      
+      <div class="sidesection">
+        <div id="skyscraper">
+        
+          <div id="adngin-sidebar_top-0"></div>
+        
+        </div>
+      </div>
+        
+      <style>
+      .ribbon-vid {
+        font-size:12px;
+        font-weight:bold;
+        padding: 6px 20px;
+        left:-20px;
+        top:-10px;
+        text-align: center;
+        color:black;
+        border-radius:25px;
+      }
+        
+      .icon-bar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+      }
+      
+      .icon-bar a {
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36px;
+      }
+      
+      .icon-bar a:hover {
+        background-color: #000;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+      }
+        </style>
 
 
 
@@ -794,7 +703,6 @@ size) */</span><br>@media screen and (max-height: 450px) <span class="cssdelimit
 </div>
 <div id="footer" class="footer cc-container cc-white">
 
-<hr>
 
 <div style="overflow:auto">
   <div class="bottomad">
@@ -808,45 +716,14 @@ size) */</span><br>@media screen and (max-height: 450px) <span class="cssdelimit
   </div>
 </div>
 
-<hr>
-
-
 
 </div>
-<hr>
 
 </div>        
 </div>        
 
-<hr>
 
-<script src="../../../js/window.js"></script>
-
-<!--
-<script>
-  /* When the user clicks on the button, 
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
-
-  
-  </script> -->
+<script src="../../../../js/window.js"></script>
 
 
 

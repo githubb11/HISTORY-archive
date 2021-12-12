@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+ 
+</style>
+</head>
+<body>
+<h1>tabs</h1>
+
+
+      
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'section-1')" id="defaultOpen">section 1</button>
+  <button class="tablinks" onclick="openTab(event, 'section-2')">section 2</button>
+  <button class="tablinks" onclick="openTab(event, 'section-3')">section 3</button>
+</div>
+
+<div id="section-1" class="tabcontent">
+ <p>Dolorum molestiae non perferendis odit occaecati aut. In sapiente quasi necessitatibus officiis maxime iure nulla. Id praesentium dolore totam ducimus sequi aut. Qui vero consequatur et similique quod eaque rerum magni. Aut sapiente perspiciatis necessitatibus. Expedita et maiores reprehenderit fuga omnis quis et.</p>
+</div>
+
+<div id="section-2" class="tabcontent">
+  <p>Exercitationem odio magnam magni qui est ipsa praesentium. Qui ut molestiae numquam voluptas impedit saepe eius ut. Nemo reiciendis doloribus possimus pariatur laborum delectus esse. Qui doloribus est explicabo non sit nostrum quo.</p>
+
+</div>
+
+<div id="section-3" class="tabcontent">
+  <p>Veniam unde veritatis sunt alias. Impedit cupiditate mollitia minima hic soluta magni eos. Modi molestias a officia harum. Ea est dolorem aliquam odio reprehenderit.</p>
+
+</div>
+
+<script>
+function openTab(evt, openTab) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(openTab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+  // Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>

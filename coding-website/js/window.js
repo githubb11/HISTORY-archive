@@ -182,32 +182,7 @@ function fix_sidemenu() {
   var w, top;
   w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   top = scrolltop()    
-/*  if (w < 993 && w > 600) {
-    if (top == 0) {
-      document.getElementById("sidenav").style.top = "144px";
-    }
-    if (top > 0 && top < 100) {
-      document.getElementById("sidenav").style.top = (144 - top) + "px";      
-    }
-    if (top > 100) {
-      document.getElementById("sidenav").style.top = document.getElementById("topnav").offsetHeight + "px";
-      document.getElementById("belowtopnav").style.paddingTop = "44px";    
-      document.getElementById("topnav").style.position = "fixed";    
-      document.getElementById("topnav").style.top = "0";
-      document.getElementById("googleSearch").style.position = "fixed";
-      document.getElementById("googleSearch").style.top = "0";
-      document.getElementById("google_translate_element").style.position = "fixed";
-      document.getElementById("google_translate_element").style.top = "0";
-    } else {
-      document.getElementById("belowtopnav").style.paddingTop = "0";
-      document.getElementById("topnav").style.position = "relative";
-      document.getElementById("googleSearch").style.position = "absolute";
-      document.getElementById("googleSearch").style.top = "";
-      document.getElementById("google_translate_element").style.position = "absolute";
-      document.getElementById("google_translate_element").style.top = "";
-    }
-    document.getElementById("leftmenuinner").style.paddingTop = "0";
-  } else {*/
+
 
 
     if (top == 0) {
@@ -280,9 +255,6 @@ function changecodetheme() {
   }
 }
 
-function click_login_btn() {
-  cc_open_nav("login");
-}
 
 function cc_open() {
   var x = document.getElementById("myAccordion");
@@ -477,79 +449,8 @@ function clickFBLike() {
 function hideFBLike() {
   document.getElementById("fblikeframe").style.display = 'none';
 }
-function loginCircle(xx, yy, r, aD) {
-  var aR = (aD-90) * Math.PI / 180.0;
-  return {
-    x: xx + (r * Math.cos(aR)),
-    y: yy + (r * Math.sin(aR))
-  };
-}
-function loginDrawCircle(x, y, r, sa, ea){
-    var s = loginCircle(x, y, r, ea);
-    var e = loginCircle(x, y, r, sa);
-    var f = ea - sa <= 180 ? "0" : "1";
-    return ["M", s.x, s.y, "A", r, r, 0, f, 0, e.x, e.y].join(" ");
-}
-function login_user(event) {
-  event.preventDefault();
-  var xhttp = new XMLHttpRequest(), a, b, f, f2, valid = 1;
-  f = document.forms["loginform"];
-  a = f["n"];
-  b = f["p"];
-  if (a.value == "") {
-    a.style.backgroundColor = "#ffcccc";
-    valid = 0;
-  }
-  if (b.value == "") {
-    b.style.backgroundColor = "#ffcccc";
-    valid = 0;
-  }
-  if (valid == 0) {return false;}
-  document.getElementById('login_submit_button').focus();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      if (this.responseText == "OK") {
-        a.value = "";
-        b.value = "";
-        cc_close_nav("login");
-        loadUser();
-      } else if (this.responseText == "OK2") {
-        document.getElementById("loginerrordiv").innerHTML = "Your account has not been verified yet";
-        document.getElementById("loginerrordiv").style.display = "block";
-      } else if (this.responseText == "NOSUCHUSER") {
-        a.style.backgroundColor = "#ffcccc";
-        b.style.backgroundColor = "#ffcccc";
-        document.getElementById("loginerrordiv").innerHTML = "Wrong Username or Password";
-        document.getElementById("loginerrordiv").style.display = "block";
-      } else {
-        document.getElementById("loginerrordiv").innerHTML = "Ooops! Something went wrong...";
-        document.getElementById("loginerrordiv").style.display = "block";
-      }
-    }
-  };
-  xhttp.open("POST", "https://mypage.ccschools.com/mypage/login_user.php", true);
-  xhttp.withCredentials = true;
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhttp.send("n=" + encodeURIComponent(a.value) + "&p=" + encodeURIComponent(b.value));
 
-}
 
-function login_inputGetsFocus(elmnt) {
-  document.forms["loginform"]["n"].style.backgroundColor = "#fff";
-  document.forms["loginform"]["p"].style.backgroundColor = "#fff";
-  if (document.getElementById("loginerrordiv")) {
-    document.getElementById("loginerrordiv").style.display = "none";
-  }
-}
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    autoDisplay: false,
-    gaTrack: true,
-    gaId: 'UA-3855518-1',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
 function printPage() {
   var content = document.getElementById("main").innerHTML;
   var css = "", i, j, c = document.getElementById("main").cloneNode(true);
@@ -563,80 +464,7 @@ function printPage() {
   var myWindow=window.open('','','');
   myWindow.document.write("<html><head>"+head+"<style>body{padding:15px;}@media print {.printbtn {display:none;}}</style></head><body><button class='printbtn' onclick='window.print()'>Print Page</button><br><br>"+content+"<p><a href='/about/about_copyright.asp'>Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.</p></body></html>");
 }
-function openGoogleTranslate() {
-  var d = "text/javascript",
-    e = "text/css",
-    f = "stylesheet",
-    g = "script",
-    h = "link",
-    k = "head",
-    l = "complete",
-    m = "UTF-8",
-    n = ".";
-  document.getElementById("google_translate_element").innerHTML = "";
 
-  function p(b) {
-    var a = document.getElementsByTagName(k)[0];
-    a || (a = document.body.parentNode.appendChild(document.createElement(k)));
-    a.appendChild(b)
-  }
-
-  function _loadJs(b) {
-    var a = document.createElement(g);
-    a.type = d;
-    a.charset = m;
-    a.src = b;
-    p(a)
-  }
-
-  function _loadCss(b) {
-    var a = document.createElement(h);
-    a.type = e;
-    a.rel = f;
-    a.charset = m;
-    a.href = b;
-    p(a)
-  }
-
-  function _isNS(b) {
-    b = b.split(n);
-    for (var a = window, c = 0; c < b.length; ++c)
-      if (!(a = a[b[c]])) return !1;
-    return !0
-  }
-
-  function _setupNS(b) {
-    b = b.split(n);
-    for (var a = window, c = 0; c < b.length; ++c) a.hasOwnProperty ? a.hasOwnProperty(b[c]) ? a = a[b[c]] : a = a[b[c]] = {} : a = a[b[c]] || (a[b[c]] = {});
-    return a
-  }
-  window.addEventListener && "undefined" == typeof document.readyState && window.addEventListener("DOMContentLoaded", function() {
-    document.readyState = l
-  }, !1);
-  if (_isNS('google.translate.Element')) {
-    return
-  }(function() {
-    var c = _setupNS('google.translate._const');
-    c._cl = 'no';
-    c._cuc = 'googleTranslateElementInit';
-    c._cac = '';
-    c._cam = '';
-    var h = 'translate.googleapis.com';
-    var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://';
-    var b = s + h;
-    c._pah = h;
-    c._pas = s;
-    c._pbi = b + '/translate_static/img/te_bk.gif';
-    c._pci = b + '/translate_static/img/te_ctrl3.gif';
-    c._pli = b + '/translate_static/img/loading.gif';
-    c._plla = h + '/translate_a/l';
-    c._pmi = b + '/translate_static/img/mini_google.png';
-    c._ps = b + '/translate_static/css/translateelement.css';
-    c._puh = 'translate.google.com';
-    _loadCss(c._ps);
-    _loadJs(b + '/translate_static/js/element/main_no.js');
-  })();
-}
 /* cccodecolor ver 1.32 by ccschools.com */
 (
 function ccCodeColor() {
@@ -654,19 +482,7 @@ function ccCodeColor() {
 //      }
     }
 }
-/*
-function codemirrorize(x) {
-  var txt = x.innerText;
-  x.innerHTML = "";
-  var myCodeMirror = CodeMirror(x, 
-    {
-      mode: "jsx",
-      value: txt,
-      readOnly: true
-    });
 
-}
-*/
 function ccCodeColorize(x, lang) {
   var tagcolor = "mediumblue";
   var tagnamecolor = "brown";
@@ -1321,3 +1137,5 @@ function setThemeMode() {
     document.body.className += " darktheme";
   }
 })();
+
+

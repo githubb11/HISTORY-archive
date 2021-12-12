@@ -28,65 +28,6 @@ k42 = true;
 
 </script>
 
-<script async="" data-cfasync="false" src="./src/loader.js" type="text/javascript"></script>
-<script type="text/javascript">
-var stickyadstatus = "";
-function fix_stickyad() {
-  document.getElementById("stickypos").style.position = "sticky";
-  var elem = document.getElementById("stickyadcontainer");
-  if (!elem) {return false;}
-  if (document.getElementById("skyscraper")) {
-    var skyWidth = Number(cc_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
-    }
-  else {
-    var skyWidth = Number(cc_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
-  }
-  elem.style.width = skyWidth + "px";
-  if (window.innerWidth <= 992) {
-    elem.style.position = "";
-    elem.style.top = stickypos + "px";
-    return false;
-  }
-  var stickypos = document.getElementById("stickypos").offsetTop;
-  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-  var adHeight = Number(cc_getStyleValue(elem, "height").replace("px", ""));
-  if (stickyadstatus == "") {
-    if ((stickypos - docTop) < 60) {
-      elem.style.position = "fixed";
-      elem.style.top = "60px";
-      stickyadstatus = "sticky";
-      document.getElementById("stickypos").style.position = "sticky";
-
-    }
-  } else {
-    if ((docTop + 60) - stickypos < 0) {  
-      elem.style.position = "";
-      elem.style.top = stickypos + "px";
-      stickyadstatus = "";
-      document.getElementById("stickypos").style.position = "static";
-    }
-  }
-  if (stickyadstatus == "sticky") {
-    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
-      elem.style.position = "absolute";
-      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
-      document.getElementById("stickypos").style.position = "static";
-    } else {
-        elem.style.position = "fixed";
-        elem.style.top = "60px";
-        stickyadstatus = "sticky";
-        document.getElementById("stickypos").style.position = "sticky";
-    }
-  }
-}
-function cc_getStyleValue(elmnt,style) {
-  if (window.getComputedStyle) {
-    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
-  } else {
-    return elmnt.currentStyle[style];
-  }
-}
-</script>
 <style>
 
 .offcanvas {
@@ -268,43 +209,42 @@ function filterContent(elmnt) {
 <h2 style="display: block;">UI elements</h2>
 <a target="_top" href="frames/iconb.html" style="display: block;">Icon Bar</a>
 <a target="_top" href="frames/tabh.html" style="display: block;">Tabs</a>
-<a target="_top" href="" style="display: block;">Accordion</a>
-<a target="_top" href="" style="display: block;">Menu Icon</a>
-<a target="_top" href="" style="display: block;">Simple Password login</a>
-<a target="_top" href="" style="display: block;">Sticky Navbar</a>
-<a target="_top" href="" style="display: block;">Cascading Dropdown List</a>
-<a target="_top" href="" style="display: block;">Clickable Dropdown</a>
-<a target="_top" href="" style="display: block;">Hoverable Dropdown</a>
-<a target="_top" href="" style="display: block;">Shrink Navigation Menu on Scroll</a>
-<a target="_top" href="" style="display: block;">Vertical Button Group</a>
-<a target="_top" href="" style="display: block;">Mobile Navigation Menu</a>
-<a target="_top" href="" style="display: block;">Mega Menu</a>
-<a target="_top" href="" style="display: block;">Responsive Header</a>
-<a target="_top" href="" style="display: block;">Sticky Social Bar</a>
-<a target="_top" href="" style="display: block;">Pill Navigation</a>
-<a target="_top" href="" style="display: block;">CSS Pagination</a>
-<a target="_top" href="" style="display: block;">Collapse Sidepanel</a>
-<a target="_top" href="" style="display: block;">Collapse Sidepanel with icons</a>
-<a target="_top" href="" style="display: block;">Collapse Sidebar</a>
-<a target="_top" href="" style="display: block;">Collapse Sidebar icon bar</a>
-<a target="_top" href="" style="display: block;">Collapse Sidebar icon bar v2</a>
-<a target="_top" href="" style="display: block;">Curtain Menu</a>
-<a target="_top" href="" style="display: block;">Right Aligned Menu Buttons</a>
-<a target="_top" href="" style="display: block;">Bottom Border Nav Links</a>
-<a target="_top" href="" style="display: block;">Responsive Bottom Navigation</a>
-<a target="_top" href="" style="display: block;">Vertical Menu</a>
-<a target="_top" href="" style="display: block;">Collapse Sidepanel with icons</a>
-<a target="_top" href="" style="display: block;">Side Navigation Buttons</a>
-<a target="_top" href="" style="display: block;">Side Navigation Buttons</a>
-<a target="_top" href="" style="display: block;">Off-Canvas Menu</a>
-<a target="_top" href="" style="display: block;">Dropdown Navbar</a>
-<a target="_top" href="" style="display: block;">scroll tab buttons</a>
-<a target="_top" href="" style="display: block;">Tab Headers</a>
-<a target="_top" href="" style="display: block;">Vertical Tabs</a>
-<a target="_top" href="" style="display: block;">Hover Tabs</a>
-<a target="_top" href="" style="display: block;">Button Group</a>
-<a target="_top" href="" style="display: block;">Modal Box</a>
-<a target="_top" href="" style="display: block;"></a>
+<a target="_top" href="frames/accord.html" style="display: block;">Accordion</a>
+<a target="_top" href="frames/micon.html" style="display: block;">Menu Icon</a>
+<a target="_top" href="frames/pwslog.html" style="display: block;">Simple Password login</a>
+<a target="_top" href="frames/stnav.html" style="display: block;">Sticky Navbar</a>
+<a target="_top" href="frames/cassdli.html" style="display: block;">Cascading Dropdown List</a>
+<a target="_top" href="frames/cassdr.html" style="display: block;">Clickable Dropdown</a>
+<a target="_top" href="frames/hoverdr.html" style="display: block;">Hoverable Dropdown</a>
+<a target="_top" href="frames/shnmosr.html" style="display: block;">Shrink Navigation Menu on Scroll</a>
+<a target="_top" href="frames/vebgro.html" style="display: block;">Vertical Button Group</a>
+<a target="_top" href="frames/mnavmenu.html" style="display: block;">Mobile Navigation Menu</a>
+<a target="_top" href="frames/megam.html" style="display: block;">Mega Menu</a>
+<a target="_top" href="frames/responsh.html" style="display: block;">Responsive Header</a>
+<a target="_top" href="frames/ssbar.html" style="display: block;">Sticky Social Bar</a>
+<a target="_top" href="frames/pillnav.html" style="display: block;">Pill Navigation</a>
+<a target="_top" href="frames/csspill.html" style="display: block;">CSS Pagination</a>
+<a target="_top" href="frames/cosidepan.html" style="display: block;">Collapse Sidepanel</a>
+<a target="_top" href="frames/cosidepanwi.html" style="display: block;">Collapse Sidepanel with icons</a>
+<a target="_top" href="frames/collsidebar.html" style="display: block;">Collapse Sidebar</a>
+<a target="_top" href="frames/csideibv1.html" style="display: block;">Collapse Sidebar icon bar</a>
+<a target="_top" href="frames/csideibv2.html" style="display: block;">Collapse Sidebar icon bar v2</a>
+<a target="_top" href="frames/certmen.html" style="display: block;">Curtain Menu</a>
+<a target="_top" href="frames/ramenub.html" style="display: block;">Right Aligned Menu Buttons</a>
+<a target="_top" href="frames/bbnavli.html" style="display: block;">Bottom Border Nav Links</a>
+<a target="_top" href="frames/resbnav.html" style="display: block;">Responsive Bottom Navigation</a>
+<a target="_top" href="frames/vermenu.html" style="display: block;">Vertical Menu</a>
+<a target="_top" href="frames/csidewic.html" style="display: block;">Collapse Sidepanel with icons</a>
+<a target="_top" href="frames/sidenavb.html" style="display: block;">Side Navigation Buttons</a>
+<a target="_top" href="frames/offcanmen.html" style="display: block;">Off-Canvas Menu</a>
+<a target="_top" href="frames/dropnav.html" style="display: block;">Dropdown Navbar</a>
+<a target="_top" href="frames/scrtabb.html" style="display: block;">scroll tab buttons</a>
+<a target="_top" href="frames/tabhead.html" style="display: block;">Tab Headers</a>
+<a target="_top" href="frames/verttab.html" style="display: block;">Vertical Tabs</a>
+<a target="_top" href="frames/hovetab.html" style="display: block;">Hover Tabs</a>
+<a target="_top" href="frames/btgroup.html" style="display: block;">Button Group</a>
+<a target="_top" href="frames/modelbo.html" style="display: block;">Modal Box</a>
+<a target="_top" href="frame/comesp.html" style="display: block;">coming soon page</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
@@ -316,46 +256,45 @@ function filterContent(elmnt) {
 <br style="display: block;">
 
 <h2 style="display: block;">Images</h2>
-<a target="_top" href="" style="display: block;">image grid</a>
-<a target="_top" href="" style="display: block;">rounded image</a>
-<a target="_top" href="" style="display: block;">Slideshow Gallery</a>
-<a target="_top" href="" style="display: block;">Modal Images</a>
-<a target="_top" href="" style="display: block;">Image Grid</a>
-<a target="_top" href="" style="display: block;">Responsive Image Grid</a>
-<a target="_top" href="" style="display: block;">Tab Gallery</a>
-<a target="_top" href="" style="display: block;">Image Hover Overlay</a>
-<a target="_top" href="" style="display: block;">Image Overlay Slide</a>
-<a target="_top" href="" style="display: block;">Image Overlay Zoom</a>
-<a target="_top" href="" style="display: block;">image button</a>
-<a target="_top" href="" style="display: block;">Image Overlay Title</a>
-<a target="_top" href="" style="display: block;">Image Overlay Icon</a>
-<a target="_top" href="" style="display: block;">Add Image Effects</a>
-<a target="_top" href="" style="display: block;">Image Text</a>
-<a target="_top" href="" style="display: block;">Image Text Blocks</a>
-<a target="_top" href="" style="display: block;">Transparent image Text</a>
-<a target="_top" href="" style="display: block;">slideshow</a>
-<a target="_top" href="" style="display: block;">Full Page Image</a>
-<a target="_top" href="" style="display: block;">Form on Image</a>
-<a target="_top" href="" style="display: block;">Hero Image</a>
-<a target="_top" href="" style="display: block;">Blurred Background Image</a>
-<a target="_top" href="" style="display: block;">Change Background on Scroll</a>
-<a target="_top" href="" style="display: block;">Images Side By Side</a>
-<a target="_top" href="" style="display: block;">Avatar Images</a>
-<a target="_top" href="" style="display: block;">Responsive Images</a>
-<a target="_top" href="" style="display: block;">Center Images</a>
-<a target="_top" href="" style="display: block;">Thumbnails</a>
-<a target="_top" href="" style="display: block;">Border Around Image</a>
-<a target="_top" href="" style="display: block;">Meet The Team</a>
-<a target="_top" href="" style="display: block;">Sticky Image</a>
-<a target="_top" href="" style="display: block;">Flip an Image</a>
-<a target="_top" href="" style="display: block;">Shake an Image</a>
-<a target="_top" href="" style="display: block;">Portfolio Gallery</a>
-<a target="_top" href="" style="display: block;">Portfolio Gallery with Filtering</a>
-<a target="_top" href="" style="display: block;">Image Zoom</a>
-<a target="_top" href="" style="display: block;">Image Magnifier Glass</a>
-<a target="_top" href="" style="display: block;">Image Comparison Slider</a>
-<a target="_top" href="" style="display: block;">Favicon</a>
-<a target="_top" href="" style="display: block;">Social Media Buttons</a>
+<a target="_top" href="frames/imggrid.html" style="display: block;">image grid</a>
+<a target="_top" href="frames/roundimg.html" style="display: block;">rounded image</a>
+<a target="_top" href="frames/imgslga.html" style="display: block;">Slideshow Gallery</a>
+<a target="_top" href="frames/modalimg.html" style="display: block;">Modal Images</a>
+<a target="_top" href="frames/rimggrid.html" style="display: block;">Responsive Image Grid</a>
+<a target="_top" href="frames/tabgaller.html" style="display: block;">Tab Gallery</a>
+<a target="_top" href="frames/imghovov.html" style="display: block;">Image Hover Overlay</a>
+<a target="_top" href="frames/imgovsl.html" style="display: block;">Image Overlay Slide</a>
+<a target="_top" href="frames/imgovzoom.html" style="display: block;">Image Overlay Zoom</a>
+<a target="_top" href="frames/imgbutt.html" style="display: block;">image button</a>
+<a target="_top" href="frames/imgoverti.html" style="display: block;">Image Overlay Title</a>
+<a target="_top" href="frames/imgoverico.html" style="display: block;">Image Overlay Icon</a>
+<a target="_top" href="frames/aimgeff.html" style="display: block;">Add Image Effects</a>
+<a target="_top" href="frames/imgtext.html" style="display: block;">Image Text</a>
+<a target="_top" href="frames/imgtextbl.html" style="display: block;">Image Text Blocks</a>
+<a target="_top" href="frames/transimgt.html" style="display: block;">Transparent image Text</a>
+<a target="_top" href="frames/imgslid.html" style="display: block;">slideshow</a>
+<a target="_top" href="frames/fullpimg.html" style="display: block;">Full Page Image</a>
+<a target="_top" href="frames/formoimg.html" style="display: block;">Form on Image</a>
+<a target="_top" href="frames/heroimg.html" style="display: block;">Hero Image</a>
+<a target="_top" href="frames/blurbimg.html" style="display: block;">Blurred Background Image</a>
+<a target="_top" href="frames/blurbimg.html" style="display: block;">Change Background on Scroll</a>
+<a target="_top" href="frames/cbackonsc.html" style="display: block;">Images Side By Side</a>
+<a target="_top" href="frames/avatimg.html" style="display: block;">Avatar Images</a>
+<a target="_top" href="frames/respoimg.html" style="display: block;">Responsive Images</a>
+<a target="_top" href="frames/centimg.html" style="display: block;">Center Images</a>
+<a target="_top" href="frames/imgthum.html" style="display: block;">Thumbnails</a>
+<a target="_top" href="frames/imgborai.html" style="display: block;">Border Around Image</a>
+<a target="_top" href="frames/imgmtt.html" style="display: block;">Meet The Team</a>
+<a target="_top" href="frames/stickyimg.html" style="display: block;">Sticky Image</a>
+<a target="_top" href="frames/flipimg.html" style="display: block;">Flip an Image</a>
+<a target="_top" href="frames/shakeimg.html" style="display: block;">Shake an Image</a>
+<a target="_top" href="frames/imgportg.html" style="display: block;">Portfolio Gallery</a>
+<a target="_top" href="frames/imgportgf.html" style="display: block;">Portfolio Gallery with Filtering</a>
+<a target="_top" href="frames/imgovzoom.html" style="display: block;">Image Zoom</a>
+<a target="_top" href="frames/imgmaggl.html" style="display: block;">Image Magnifier Glass</a>
+<a target="_top" href="frames/imgcompsl.html" style="display: block;">Image Comparison Slider</a>
+<a target="_top" href="frames/favicon.html" style="display: block;">Favicon</a>
+<a target="_top" href="frames/socailmb.html" style="display: block;">Social Media Buttons</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
@@ -366,24 +305,24 @@ function filterContent(elmnt) {
 <br style="display: block;">
 
 <h2 style="display: block;">Buttons</h2>
-<a target="_top" href="" style="display: block;">Outline Buttons</a>
-<a target="_top" href="" style="display: block;">Alert Buttons</a>
-<a target="_top" href="" style="display: block;">Split Buttons</a>
-<a target="_top" href="" style="display: block;">Animated Buttons</a>
-<a target="_top" href="" style="display: block;">Fading Buttons</a>
-<a target="_top" href="" style="display: block;">Button on Image</a>
-<a target="_top" href="" style="display: block;">Read More Read Less</a>
-<a target="_top" href="" style="display: block;">Loading Buttons</a>
-<a target="_top" href="" style="display: block;">Download Button</a>
-<a target="_top" href="" style="display: block;">Pill Buttons</a>
-<a target="_top" href="" style="display: block;">Notification Button</a>
-<a target="_top" href="" style="display: block;">Icon Buttons</a>
-<a target="_top" href="" style="display: block;">Next and Previous Buttons</a>
-<a target="_top" href="" style="display: block;">More Button in Navbar</a>
-<a target="_top" href="" style="display: block;">Block Buttons</a>
-<a target="_top" href="" style="display: block;">Text Buttons</a>
-<a target="_top" href="" style="display: block;">Scroll To Top Button</a>
-<a target="_top" href="" style="display: block;">Scroll To bottom Button</a>
+<a target="_top" href="frames/outlbut.html" style="display: block;">Outline Buttons</a>
+<a target="_top" href="frames/alertbut.html" style="display: block;">Alert Buttons</a>
+<a target="_top" href="frames/splibut.html" style="display: block;">Split Buttons</a>
+<a target="_top" href="frames/animatbut.html" style="display: block;">Animated Buttons</a>
+<a target="_top" href="frames/fadbut.html" style="display: block;">Fading Buttons</a>
+<a target="_top" href="frames/butimg.html" style="display: block;">Button on Image</a>
+<a target="_top" href="frames/readmlbut.html" style="display: block;">Read More Read Less</a>
+<a target="_top" href="frames/loadbut.html" style="display: block;">Loading Buttons</a>
+<a target="_top" href="frames/downlbut.html" style="display: block;">Download Button</a>
+<a target="_top" href="frames/pillbut.html" style="display: block;">Pill Buttons</a>
+<a target="_top" href="frames/notfbut.html" style="display: block;">Notification Button</a>
+<a target="_top" href="frames/icobut.html" style="display: block;">Icon Buttons</a>
+<a target="_top" href="frames/neprbut.html" style="display: block;">Next and Previous Buttons</a>
+<a target="_top" href="frames/morebutnav.html" style="display: block;">More Button in Navbar</a>
+<a target="_top" href="frames/blocbut.html" style="display: block;">Block Buttons</a>
+<a target="_top" href="frames/textbut.html" style="display: block;">Text Buttons</a>
+<a target="_top" href="frames/srttbut.html" style="display: block;">Scroll To Top Button</a>
+<a target="_top" href="frames/srtbbut.html" style="display: block;">Scroll To bottom Button</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
@@ -420,7 +359,7 @@ function filterContent(elmnt) {
 <br style="display: block;">
 
 <h2 style="display: block;">popups</h2>
-<a target="_top" href="" style="display: block;">hover popup</a>
+<a target="_top" href="frames/hoverpop.html" style="display: block;">hover popup</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>
@@ -473,13 +412,13 @@ function filterContent(elmnt) {
 
 <h2 style="display: block;">file operations</h2>
 <a target="_top" href="" style="display: block;">access file</a>
-<a target="_top" href="" style="display: block;">emded pdf</a>
-<a target="_top" href="" style="display: block;">download file</a>
-<a target="_top" href="" style="display: block;">embed pdf no download</a>
-<a target="_top" href="" style="display: block;">import css</a>
-<a target="_top" href="" style="display: block;">embed css</a>
-<a target="_top" href="" style="display: block;">embed js</a>
-<a target="_top" href="" style="display: block;">embed markdown</a>
+<a target="_top" href="frames/embpdf.html" style="display: block;">emded pdf</a>
+<a target="_top" href="frames/downloadfi.html" style="display: block;">download file</a>
+<a target="_top" href="frames/embpdfnd.html" style="display: block;">embed pdf no download</a>
+<a target="_top" href="frames/impcss.html" style="display: block;">import css</a>
+<a target="_top" href="frames/embcss.html" style="display: block;">embed css</a>
+<a target="_top" href="frames/embjs.html" style="display: block;">embed js</a>
+<a target="_top" href="frames/embmd.html" style="display: block;">embed markdown</a>
 <a target="_top" href="" style="display: block;">html previewer</a>
 <a target="_top" href="" style="display: block;"></a>
 <a target="_top" href="" style="display: block;"></a>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1>password</h1>
+
+<form>
+  <label for="pswd">Enter your password: </label>
+  <input type="password" id="pswd">
+  <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+
+<br>
+<h3>the password is abc</h3>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+  function checkPswd() {
+      var confirmPassword = "abc";
+      var password = document.getElementById("pswd").value;
+      if (password == confirmPassword) {
+          alert("passwords match")
+      }
+      else{
+          alert("Passwords do not match.");
+      }
+  }
+</script>
+      
+
+</body>
+</html>

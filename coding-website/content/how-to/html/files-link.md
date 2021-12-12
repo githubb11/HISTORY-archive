@@ -1,9 +1,9 @@
 UI elements
 Icon Bar = iconb
-Tabs = tabh
-Accordion = accord
+Tabs = tabh  done
+Accordion = accord   done
 Menu Icon = micon
-Simple Password login = pwslog
+Simple Password login = pwslog done
 Sticky Navbar = stnav
 Cascading Dropdown List = cassdli
 Clickable Dropdown = cassdr
@@ -37,6 +37,7 @@ Vertical Tabs = verttab
 Hover Tabs = hovetab
 Button Group = btgroup
 Modal Box = modelbo
+coming soon page = comesp
 
 <h2 style="display: block;">Images</h2>
  image grid = imggrid
@@ -47,61 +48,61 @@ Modal Box = modelbo
  Responsive Image Grid = rimggrid
  Tab Gallery = tabgaller
  Image Hover Overlay = imghovov
- Image Overlay Slide
- Image Overlay Zoom
- image button<
- Image Overlay Title</a>
- Image Overlay Icon</a>
- Add Image Effects</a>
- Image Text</a>
- Image Text Blocks</a>
- Transparent image Text</a>
- slideshow</a>
- Full Page Image</a>
- Form on Image</a>
- Hero Image</a>
- Blurred Background Image</a>
- Change Background on Scroll</a>
- Images Side By Side</a>
- Avatar Images</a>
- Responsive Images</a>
- Center Images</a>
- Thumbnails</a>
- Border Around Image</a>
- Meet The Team</a>
- Sticky Image</a>
- Flip an Image</a>
- Shake an Image</a>
- Portfolio Gallery</a>
- Portfolio Gallery with Filtering</a>
- Image Zoom</a>
- Image Magnifier Glass
- Image Comparison Slider
- Favicon
- Social Media Buttons
+ Image Overlay Slide = imgovsl
+ Image Overlay Zoom = imgovzoom
+ image button = imgbutt
+ Image Overlay Title = imgoverti
+ Image Overlay Icon = imgoverico
+ Add Image Effects = aimgeff
+ Image Text = imgtext
+ Image Text Blocks = imgtextbl
+ Transparent image Text = transimgt
+ slideshow = imgslid
+ Full Page Image = fullpimg
+ Form on Image = formoimg
+ Hero Image = heroimg
+ Blurred Background Image = blurbimg
+ Change Background on Scroll = cbackonsc
+ Images Side By Side = imgsibsi
+ Avatar Images = avatimg
+ Responsive Images = respoimg
+ Center Images = centimg
+ Thumbnails = imgthum
+ Border Around Image = imgborai
+ Meet The Team = imgmtt
+ Sticky Image stickyimg
+ Flip an Image = flipimg
+ Shake an Image = shakeimg
+ Portfolio Gallery = imgportg
+ Portfolio Gallery with Filtering = imgportgf
+ Image Zoom = imgzoom
+ Image Magnifier Glass = imgmaggl
+ Image Comparison Slider = imgcompsl
+ Favicon = favicon  done
+ Social Media Buttons = socailmb
 
 <h2 style="display: block;">Buttons</h2>
- Outline Buttons</a>
- Alert Buttons</a>
- Split Buttons</a>
- Animated Buttons</a>
- Fading Buttons</a>
- Button on Image</a>
- Read More Read Less
- Loading Buttons
- Download Button
- Pill Buttons
- Notification Button
- Icon Buttons
- Next and Previous Buttons
- More Button in Navbar
- Block Buttons
- Text Buttons
- Scroll To Top Button
- Scroll To bottom Button
+ Outline Buttons = outlbut
+ Alert Buttons = alertbut
+ Split Buttons = splibut
+ Animated Buttons = animatbut
+ Fading Buttons = fadbut
+ Button on Image = butimg
+ Read More Read Less = readmlbut
+ Loading Buttons = loadbut
+ Download Button = downlbut
+ Pill Buttons = pillbut
+ Notification Button = notfbut
+ Icon Buttons = icobut
+ Next and Previous Buttons = neprbut
+ More Button in Navbar = morebutnav
+ Block Buttons = blocbut
+ Text Buttons = textbut
+ Scroll To Top Button = srttbut
+ Scroll To bottom Button = srtbbut
 
 <h2 style="display: block;">popups</h2>
- hover popup
+ hover popup = hoverpop
 
 
 
@@ -113,5 +114,5 @@ Modal Box = modelbo
  import css = impcss
  embed css = emfcss
  embed js = embjs
- embed markdown = embmd
+ embed markdown = embmd done
  html previewer 
