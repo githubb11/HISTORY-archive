@@ -607,6 +607,9 @@ div.scrollmenu a:hover {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
+  line-height: 0px;
+
+  padding-bottom: 40px;
   padding: 18px;
   width: 100%;
   border: none;
@@ -622,9 +625,11 @@ div.scrollmenu a:hover {
 
 .panel {
   padding: 0 18px;
+  line-height: 0px;
   display: none;
   background-color: transparent;
   overflow: auto;
+  padding-bottom: 10px;
 }
 
 
