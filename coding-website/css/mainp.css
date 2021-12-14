@@ -1,8 +1,5 @@
-﻿/*@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
-*/
-/* cc.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+﻿
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
@@ -308,7 +305,6 @@ background-color:#000000 !important;
 color:#ffffff !important;
 }
 .topnav .cc-bar a.active {
-background-color: #04AA6D!important;
 color:#ffffff;
 }
 a.topnav-icons {
@@ -364,36 +360,6 @@ padding-top:20px;
 #sidesection_exercise a:hover,#sidesection_exercise a:active{background-color:#ccc;text-decoration:none;color:#000000;}
 
 
-.bottomad {padding:0 16px 16px 0;float:left;width:auto;}
-.footer a {text-decoration:none;}
-.footer a:hover{text-decoration:underline;}
-
-#nav_tutorials,#nav_references,#nav_exercises,#nav_login {
-display:none;
-letter-spacing:0;
-margin-top:44px;
-position:absolute;
-width:100%;
-background-color:#282A35;
-color:white;
-padding-bottom:60px;
-}
-#nav_tutorials a,#nav_references a,#nav_exercises a,#nav_examples a{
-padding:2px 0 2px 6px!important;
-font-size:18px;
-}
-#nav_tutorials a:focus,#nav_references a:focus,#nav_exercises a:focus,#nav_examples a:focus{
-color: #000;
-background-color: #ccc;
-}
-#nav_tutorials h3,#nav_references h3,#nav_exercises h3,#nav_examples h3, #sectionxs_tutorials h3,
-#sectionxs_references h3,
-#sectionxs_exercises h3 {
-padding-left:6px;
-color: #FFF4A3;
-font-family: 'Source Sans Pro', sans-serif;
-}
-
 
 .ref_overview{display:none}
 .tut_overview{
@@ -423,14 +389,7 @@ font-family: 'Source Sans Pro', sans-serif;
 .pagemenu hr {border-top: 1px solid #fff;margin:20px 0;}
 .pagemenu a {display:block;text-decoration:none!important;}
 .pagemenu a:hover,.learnmore a:active {color:#000;}
-#cc-exerciseform {background-color:#282A35;padding:16px;color:#ffffff;border-radius:5px;}
-#cc-exerciseform .exercisewindow {background-color:#ffffff;padding:16px;color:#000000;}
-#cc-exerciseform .exerciseprecontainer {background-color:#E7E9EB;padding:16px;font-size:120%;font-family:Consolas,Menlo,"Courier New", Courier, monospace;overflow:auto;}
-#cc-exerciseform .exerciseprecontainer pre[class*="language-"] {padding:1px;}
-#cc-exerciseform .exerciseprecontainer pre {display: block;}
-#cc-exerciseform .exerciseprecontainer textarea {width:100%;border:none;overflow:hidden}
-#cc-exerciseform .exerciseprecontainer input {padding:1px;border: 1px solid transparent;height:1.3em;}
-#cc-exerciseform .cc-btn {background-color:#04AA6D;border-radius:5px;font-size: 17px;font-family: 'Source Sans Pro', sans-serif;padding:7px 18px;}
+
 .cc-theme {color:#fff !important;background-color:#73AD21 !important;background-color:#04AA6D !important}
 .cc-theme-border {border-color:#04AA6D !important}
 .searchdiv {max-width:400px;margin:auto;text-align:left;font-size:16px}
@@ -638,7 +597,6 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 #div-gpt-ad-1422003450156-0 {float:none;margin-left:auto;margin-right:auto}
 #div-gpt-ad-1422003450156-3 {float:none;margin-left:auto;margin-right:auto}
 }
-/*@media (max-width:1510px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}*/
 @media (max-width:1550px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(18){display:none;}}
 @media (max-width:1475px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(17){display:none;}}
 @media (max-width:1430px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(16){display:none;}}
@@ -646,16 +604,11 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 @media (max-width:1330px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(14){display:none;}}
 @media (max-width:1250px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(13){display:none;}}
 @media (max-width:1150px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}
-/*@media (max-width:1330px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}*/
 @media (max-width:1100px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(11){display:none;}}
-/*@media (max-width:1200px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}*/
 @media (max-width:993px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}
-/*@media (max-width:1100px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}*/
 @media (max-width:930px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}
-/*@media (max-width:1000px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}*/
 @media (max-width:810px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}
 @media (max-width:770px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}
-/*@media (max-width:800px)  {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(19){display:none;}}
 @media (max-width:800px)  {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(20){display:none;}}*/
 @media (max-width:700px) {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(6){display:none;}}
 @media (max-width:560px)  {#topnav .cc-bar:nth-of-type(1) a:nth-of-type(5){display:none;}}
@@ -688,10 +641,7 @@ hr[id^="ez-insert-after-placeholder"] {margin-top: 0;}
   max-width:230px;
   background-color:#282A35
 }
-#footer {padding:32px;border-top:1px solid #f1f1f1;}
-#footer hr:first-child {
-  display:none;
-}
+
 .cc-info {
   background-color:#D9EEE1;
   border-left: none;
@@ -748,10 +698,7 @@ h2 {
 .cc-table-all td,.cc-table-all th {padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .cc-table-all th:first-child, .cc-table-all td:first-child{padding-left:16px}
 
-.bar-item-hover:hover {
-  background-color: #04AA6D !important;
-  color:white!important;
-}
+
 .mystyle,.mystyle:hover {
   background-color: #282A35!important;
   color:white!important;
@@ -791,15 +738,6 @@ h2 {
   display: none;
 }
 
-.cc-css-exercises {
-  background-color:#282A35;
-  color: white;
-}
-
-.cc-css-exercises .cc-btn {
-  background-color:#04AA6D;
-  color:white;
-}
 
 a.btnsmall {
   background-color:#04AA6D!important;
@@ -807,7 +745,6 @@ a.btnsmall {
   border-radius:5px;
 }
 
-/* NYTT br AUG 2021 */
 
 .ribbon-topnav {
   font-size:11px;
@@ -840,10 +777,7 @@ a.btnsmall {
     display: none !important;
   }
 }
-
-
-/* NYE farger */
-
+=
 .cc-black {
   background-color:#282A35!important;
   color: white!important;
@@ -870,18 +804,10 @@ a.btnsmall {
   color: white!important;
 } 
 
-.cc-text-green {
-  color: #04AA6D!important;
-} 
 
-.cc-hover-green:hover {
-  background-color:#059862!important;
-  color: white!important;
-} 
 
-.cc-hover-text-green:hover {
-  color:#059862!important;
-} 
+
+
 
 .cc-light-green {
   background-color:#D9EEE1!important;
@@ -962,11 +888,7 @@ hr {
   #snhb-wide_skyscraper-0{height:62px}
 }
 
-@media screen and (max-width:600px) {
-.cc-example, #cc-exerciseform {margin-left:-32px;margin-right:-32px;border-radius:0}
-}
 
-/*@media only screen and (max-device-width: 480px) {*/
 @media only screen and (max-width: 500px) {
 #main {padding:24px;padding:16px}
 h1 {
@@ -979,10 +901,7 @@ h2 {
   padding: 8px 16px;
   margin: 24px -16px;
 }
-#cc-exerciseform {
-  padding: 8px 16px 16px 16px;
-  margin: 24px -16px;
-}
+
 /*.cc-panel,.cc-info {*/
 .cc-note,.cc-info,.cc-warning {
   margin-left:-16px;

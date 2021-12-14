@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>admin</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+      <link rel="stylesheet" href="srcthirdparty.css">
+      <link rel="stylesheet" href="src/main.css">
+
+     
+   </head>
+   <body style="background: #444;">
+
+     
+
+      <!-- Page Content -->
+      <div class="container">
+
+         <a name="converter"></a>
+
+         <div class="row">
+
+            <div class="col-md-5">
+               <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active">
+                     <a href="#mdInputPanel" aria-controls="mdInputPanel" role="tab" data-toggle="tab" style="background: #fff; color: orange;">Markdown</a>
+                  </li>
+                  <li role="presentation">
+                     <a href="h#cssInputPanel" aria-controls="cssInputPanel" role="tab" data-toggle="tab" style="background: #fff; color: orange;">CSS theme</a>
+                  </li>
+               </ul>
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="mdInputPanel">
+                     <textarea id="sourceMarkdown"># md
+
+
+</textarea>
+                  </div><!-- /.tab-pane -->
+                  <div role="tabpanel" class="tab-pane" id="cssInputPanel">
+                     <textarea id="sourceCSS">body {
+   color: black;
+}
+</textarea>
+                  </div><!-- /.tab-pane -->
+               </div><!-- /.tab-content -->
+            </div><!-- / source column -->
+
+         
+
+            <div class="col-md-6">
+               <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active">
+                     <a href="#htmlPreviewPane" aria-controls="htmlPreviewPane" role="tab" data-toggle="tab" style="background: #fff; color: orange;">live</a>
+                  </li>
+                  <li role="presentation">
+                     <a href="#rawhtml" aria-controls="rawhtml" role="tab" data-toggle="tab" style="background: #fff; color: orange;" >HTML</a>
+                  </li>
+               </ul>
+
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="htmlPreviewPane">
+                     <iframe id="htmlPreviewFrame" src="javascript:;" src="./Free Markdown to HTML Converter_files/saved_resource.html" style="background: #fff;"></iframe>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="rawhtml">
+                     <textarea id="destMarkup" readonly="readonly"></textarea>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+        
+      <script src="src/thirdparty.js"></script>
+      <script src="src/main.js"></script>
+   
+
+</body></html>

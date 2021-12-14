@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+    <style>
+        .center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+          }
+          .rounded {
+            flex: none;
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            object-fit: cover;
+                position: absolute;
+                bottom: 450px;
+                left: 870px;
+                font-size: 18px;
+              }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  </head>
+<body style="background-color: #333;">
+<form class="center">
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" id="enter" value="Submit" onclick="checkPswd();" />
+</form>
+<!--
+ <img class="rounded" src="../images/admin.jpeg" alt="user icon"> -->
+
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "github.com";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="main.html";
+        }
+        else{
+            alert("wrong password.");
+        }
+    };
+</script>
+
+
+</body>
+</html>

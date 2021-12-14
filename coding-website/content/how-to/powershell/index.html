@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title></title>
+<title>codemedia</title>
 <meta name="robots" content="noindex">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,14 @@
 <link rel="stylesheet" href="../../../../style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 
+<link rel="SHORTCUT ICON" href="../../../../images/ussr.ico" type="image/x-icon" />
+<link rel="ICON" href="../../../../images/ussr.ico" type="image/ico" />
+
 <link rel="stylesheet" href="../../../css/mainp.css">
+
+
+
+
 
 
 <script data-cfasync="false" type="text/javascript">
@@ -21,65 +28,6 @@ k42 = true;
 
 </script>
 
-<script async="" data-cfasync="false" src="./src/loader.js" type="text/javascript"></script>
-<script type="text/javascript">
-var stickyadstatus = "";
-function fix_stickyad() {
-  document.getElementById("stickypos").style.position = "sticky";
-  var elem = document.getElementById("stickyadcontainer");
-  if (!elem) {return false;}
-  if (document.getElementById("skyscraper")) {
-    var skyWidth = Number(cc_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
-    }
-  else {
-    var skyWidth = Number(cc_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
-  }
-  elem.style.width = skyWidth + "px";
-  if (window.innerWidth <= 992) {
-    elem.style.position = "";
-    elem.style.top = stickypos + "px";
-    return false;
-  }
-  var stickypos = document.getElementById("stickypos").offsetTop;
-  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-  var adHeight = Number(cc_getStyleValue(elem, "height").replace("px", ""));
-  if (stickyadstatus == "") {
-    if ((stickypos - docTop) < 60) {
-      elem.style.position = "fixed";
-      elem.style.top = "60px";
-      stickyadstatus = "sticky";
-      document.getElementById("stickypos").style.position = "sticky";
-
-    }
-  } else {
-    if ((docTop + 60) - stickypos < 0) {  
-      elem.style.position = "";
-      elem.style.top = stickypos + "px";
-      stickyadstatus = "";
-      document.getElementById("stickypos").style.position = "static";
-    }
-  }
-  if (stickyadstatus == "sticky") {
-    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
-      elem.style.position = "absolute";
-      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
-      document.getElementById("stickypos").style.position = "static";
-    } else {
-        elem.style.position = "fixed";
-        elem.style.top = "60px";
-        stickyadstatus = "sticky";
-        document.getElementById("stickypos").style.position = "sticky";
-    }
-  }
-}
-function cc_getStyleValue(elmnt,style) {
-  if (window.getComputedStyle) {
-    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
-  } else {
-    return elmnt.currentStyle[style];
-  }
-}
-</script>
 <style>
 
 .offcanvas {
@@ -145,17 +93,18 @@ function cc_getStyleValue(elmnt,style) {
 
 <div style="display: none; position: absolute; z-index: 3; right: 111px; height: 44px; background-color: rgb(40, 42, 53); text-align: right; padding-top: 9px;" id="google_translate_element"></div>
 
-<div class="cc-card-2 topnav notranslate" id="topnav" style="position: relative; top: 0px;">
+<div class="cc-card-2 topnav " id="topnav" style="position: relative; top: 0px;">
   <div style="overflow:auto;">
     <div class="cc-bar cc-left" style="width:100%;overflow:hidden;height:44px">
       <a href="javascript:void(0);" class="topnav-icons fa fa-menu cc-hide-large cc-left cc-bar-item cc-button" onclick="open_menu()" title="Menu"></a>
-      <a href="" class="topnav-icons fas fa-home cc-left cc-bar-item cc-button" title="Home"></a>
-      <a class="cc-bar-item cc-button" href="" title="" style="padding-left:18px!important;padding-right:18px!important;">HTML</a>
-      <a class="cc-bar-item cc-button" href="" title=""></a>
-      <a class="cc-bar-item cc-button" href="" title=""></a>
-      <a class="cc-bar-item cc-button" href="" title=""></a>
-      <a class="cc-bar-item cc-button" href="" title=""></a>
-      <a class="cc-bar-item cc-button" href="" title=""></a>
+      <a href="../../../../index.html" class="topnav-icons fas fa-home cc-left cc-bar-item cc-button" title="Home"></a>
+      <a href="../../../index.html" class="topnav-icons fas fa-home cc-left cc-bar-item cc-button" title="Home"></a>
+      <a class="cc-bar-item cc-button" href="" title="HTML" style="padding-left:18px!important;padding-right:18px!important;">HTML</a>
+      <a class="cc-bar-item cc-button" href="../../home/powershell/index.html" title="powershell">powershell</a>
+      <a class="cc-bar-item cc-button" href="" title="how to">how to</a>
+      <a class="cc-bar-item cc-button" href="" title="docs">docs</a>
+      <a class="cc-bar-item cc-button" href="" title="lang">lang</a>
+      <a class="cc-bar-item cc-button" href="../../home/python/index.html" title="python">python</a>
       <a class="cc-bar-item cc-button" href="" title=""></a>
       <a class="cc-bar-item cc-button active" href="" title=""></a>
       <a class="cc-bar-item cc-button" href="" title=""></a>
@@ -257,321 +206,8 @@ function filterContent(elmnt) {
 <h2 class="left" style="display: block;">HOW TO</h2>
 <a target="_top" href="" style="display: block;">HowTo Home</a>
 <br style="display: block;">
-<h2 style="display: block;">Menus</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Images</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Buttons</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Forms</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Filters</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Tables</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">More</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-
-<h2 style="display: block;">More</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-
-<h2 style="display: block;">More</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Website</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Grid</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Google</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
-
-<h2 style="display: block;">Converters</h2>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<a target="_top" href="" style="display: block;"></a>
-<br style="display: block;">
+<h2 style="display: block;">UI elements</h2>
+<a target="_top" href="frames/iconb.html" style="display: block;">Icon Bar</a>
 
       <br style="display: block;"><br>
     </div>
@@ -581,20 +217,10 @@ function filterContent(elmnt) {
   <div class="cc-row cc-white">
     <div class="cc-col l10 m12" id="main">
       
-<h1>How TO - Collapse Sidebar</h1>
-<div class="cc-clear nextprev">
-<a class="cc-left cc-btn" href="">❮ Previous</a>
-<a class="cc-right cc-btn" href="">Next ❯</a>
-</div>
-<hr>
-<p class="intro">Learn how to create a collapsible sidebar menu.</p>
-<hr>
-  <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"></div>
+<h1>HTML Element Reference</h1>
 
 
- 
- <p>Click on the button to open the collapsible sidebar:</p>
-  <button class="cc-btn cc-dark-grey cc-padding cc-margin-bottom" onclick="openOffcanvas()">☰ Open Sidebar</button><br>
+
 
 <script>
 function openOffcanvas() {
@@ -610,55 +236,22 @@ function closeOffcanvas() {
 }
 </script>
 
-<a target="_blank" href="" class="cc-btn">Try it Yourself »</a>   <!-- html previewer-->
 
 <hr>
 
-<h2>Create a Collapsed Sidebar</h2>
-<h5>Step 1) Add HTML:</h5>
-<div class="cc-example">
-<h3>Example</h3>
-<div class="cc-code notranslate htmlHigh">
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="mySidebar"</span> class<span class="attributevaluecolor" style="color:mediumblue">="sidebar"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="javascript:void(0)"</span> 
-class<span class="attributevaluecolor" style="color:mediumblue">="closebtn"</span> onclick<span class="attributevaluecolor" style="color:mediumblue">="closeNav()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>&amp;times;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>About<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Services<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Clients<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Contact<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="main"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="openbtn"</span> onclick<span class="attributevaluecolor" style="color:mediumblue">="openNav()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>&amp;#9776; 
-  Open Sidebar<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Collapsed Sidebar<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
-  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Content...<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
-</div>
-<hr>
-<h5>Step 2) Add CSS:</h5>
-<div class="cc-example">
-<h3>Example</h3>
-<div class="cc-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-<span class="commentcolor" style="color:green">/* The sidebar menu */</span><br>.sidebar <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;height<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* 
-100% Full-height */</span><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* 0 width - change this 
-with JavaScript */</span><br>&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> fixed<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Stay in place 
-*/</span><br>&nbsp;&nbsp;z-index<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Stay on top */</span><br>&nbsp; 
-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #111<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Black*/</span><br>&nbsp;&nbsp;overflow-x<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hidden<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Disable horizontal scroll */</span><br>
-  &nbsp; 
-padding-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 60px<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Place content 60px from the top */</span><br>&nbsp; 
-transition<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0.5s<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* 0.5 second transition effect to slide in the sidebar */</span><br>
-</span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* The sidebar links */</span><br>.sidebar a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 8px 8px 8px 32px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #818181<span class="cssdelimitercolor" style="color:black">;</span></span><br>
-  &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> block<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;transition<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0.3s<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* When you mouse over the navigation links, 
-change their color */</span><br>.sidebar a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #f1f1f1<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Position and style the close button (top 
-right corner) */</span><br>.sidebar .closebtn <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
-absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
-font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 36px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 50px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* The 
-  button used to open the sidebar */</span><br>.openbtn 
-  <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; cursor<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
-  pointer<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #111<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
-  color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>.openbtn:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #444<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
-<br><span class="commentcolor" style="color:green">/* Style page content - use this if you want to push the page content to 
-the right when you open the side navigation */</span><br>#main <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; transition<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> margin-left .5s<span class="cssdelimitercolor" style="color:black">;</span></span> 
-  <span class="commentcolor" style="color:green">/* If you want a transition effect */</span><br>&nbsp; 
-padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* On smaller screens, where height is less than 
-450px, change the style of the sidenav (less padding and a smaller font 
-size) */</span><br>@media screen and (max-height: 450px) <span class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp;&nbsp;.sidebar 
-<span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red">padding-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br>&nbsp; .sidebar a <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span class="csspropertycolor" style="color:red">font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 18px<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br>
-</span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
-</div>
-<hr>
+
+
+
+
+
+
+<div style="position:relative"><div id="searchicon"></div></div>
+<div id="htmltags">
+
+
+
+
+
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 
 
@@ -667,8 +260,7 @@ size) */</span><br>@media screen and (max-height: 450px) <span class="cssdelimit
 
 <br>
 <div class="cc-clear nextprev">
-<a class="cc-left cc-btn" href="">❮ Previous</a>
-<a class="cc-right cc-btn" href="">Next ❯</a>
+
 </div>
 <div id="mypagediv2" style="position:relative;text-align:center;"></div>
 <br>

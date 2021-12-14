@@ -159,11 +159,6 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
   color: #ffffff;
 }
 
-#nav_tutorials,
-#nav_references,
-#nav_exercises {
-  margin-top: 0;
-}
 
 @media screen and (min-width: 769px) {
   .cc-bar-block .cc-button {
@@ -179,19 +174,9 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
   color: #fff;
 }
 
-#nav_tutorials,
-#nav_references,
-#nav_exercises {
-  display: none;
-  padding-bottom: 40px;
-  position: absolute;
-  width: 100%;
-  z-index: 5 !important;
-}
 
-#nav_tutorials h3,
-#nav_references h3,
-#nav_exercises h3,
+
+
 #sectionxs_tutorials h3,
 #sectionxs_references h3,
 #sectionxs_exercises h3 {
@@ -212,23 +197,13 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
   color:#282A35;
 }
 
-.green-border {
-  border-left: 4px solid #04AA6D;
-}
 
 .cc-round, .cc-round-medium {
   border-radius: 5px;
 }
 
-.bar-item-hover:hover {
-  background-color: #04AA6D!important;
-  color:white!important;
-}
 
-.bar-icon-hover:hover,.fa-logo:hover {
-  background-color: white !important;
-  color:#059862!important;
-}
+
 
 .mystyle,.mystyle:hover {
   background-color: #282A35!important;

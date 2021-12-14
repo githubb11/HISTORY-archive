@@ -1,5 +1,5 @@
-@import url(https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css);
-
+@import url('https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
 
 body{
   margin: 0;
@@ -48,6 +48,8 @@ header{
   background: #0B87A6;
 }
 
+
+
 .sidebar{
   z-index: 1;
   top: 0;
@@ -72,6 +74,7 @@ header{
 
 .sidebar .profile_info .profile_image{
   width: 100px;
+line-height: 10px;
   height: 100px;
   border-radius: 100px;
   margin-bottom: 10px;
@@ -85,17 +88,18 @@ header{
 
 
 
-.side-bar .menu{
+.sidebar .menu{
   width: 100%;
   margin-top: 80px;
 }
 
-.side-bar .menu .item{
+.sidebar .menu .item{
   position: relative;
   cursor: pointer;
+  display: none;
 }
 
-.side-bar .menu .item a{
+.sidebar .menu .item a{
   color: #fff;
   font-size: 16px;
   text-decoration: none;
@@ -104,31 +108,36 @@ header{
   line-height: 60px;
 }
 
-.side-bar .menu .item a:hover{
+.sidebar .menu .item a:hover{
   background: #8621F8;
   transition: 0.3s ease;
 }
 
-.side-bar .menu .item i{
+.sidebar .menu .item i{
   margin-right: 15px;
 }
 
-.side-bar .menu .item a .dropdown{
+.sidebar .menu .item a .dropdown{
   position: absolute;
   right: 0;
   margin: 20px;
   transition: 0.3s ease;
 }
 
-.side-bar .menu .item .sub-menu{
+.sidebar .menu .item .sub-menu{
   background: rgba(255, 255, 255, 0.1);
   display: none;
 }
 
-.side-bar .menu .item .sub-menu a{
+.sidebar .menu .item .sub-menu a{
   padding-left: 80px;
+  display: none;
+
 }
 
+.rotate{
+  transform: rotate(90deg);
+}
 
 .close-btn{
   position: absolute;
@@ -591,3 +600,129 @@ div.scrollmenu a:hover {
 .homepimgb {
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/hp1.jpeg);
 }
+
+
+
+.accordion {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: transparent;
+  overflow: auto;
+}
+
+
+
+.bottom-list {
+  width: 100%;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(-1rem);
+}
+
+.bottom-link {
+  position: relative;
+}
+
+.bottom-link i {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  transition: color 0.3s;
+}
+
+.bottom-link:hover i {
+  color: var(--active-icon-color);
+}
+
+.bottom-link span {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: -100%;
+  right: -50%;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-item:nth-child(1) span {
+  background-color: #cfa012;
+}
+
+.bottom-item:nth-child(2) span {
+  background-color: #54b154;
+}
+
+.bottom-item:nth-child(3) span {
+  background-color: #e22727;
+}
+
+
+
+/* user dropdown */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  align-items: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
