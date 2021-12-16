@@ -17,7 +17,7 @@
 
 
     <style>
-      .accordion {
+      .aaccordion {
         background-color: #eee;
         color: #444;
         cursor: pointer;
@@ -32,11 +32,11 @@
 
      
       
-      .active, .accordion:hover {
+      .aactive, .aaccordion:hover {
         background-color: #ccc; 
       }
       
-      .panel {
+      .ppanel {
         padding: 0 18px;
         display: none;
         background-color: white;
@@ -70,15 +70,15 @@
       <div class="mobile_nav_items">
         <a href="../channel.html"><i class="fas fa-desktop"></i><span>youtube channels</span></a>
         <a href="../other/index.html"><i class="fas fa-sliders-h"></i><span>other topics</span></a>
-        <a href="../histo/war.html"><i class="fas fa-cogs"></i><span>wars</span></a>
-        <a href="../histo/vid.html"><i class="fas fa-table"></i><span>vids</span></a>
-        <a href="../histo/abook.html"><i class="fas fa-th"></i><span>books & audiobooks</span></a>
-        <a href=""><i class="fas fa-info-circle"></i><span>Launguages</span></a>
-        <a href="doc.html"><i class="fas fa-sliders-h"></i><span>docs & articals</span></a>
-        <a href="vid.html"><i class="fas fa-table"></i><span>Vids</span></a>
-        <a href="../tech/doc.html"><i class="fas fa-th"></i><span>docs & articals</span></a>
-        <a href="../tech/vid.html"><i class="fas fa-info-circle"></i><span>Vids</span></a>
-       
+       <!--   <a href="histo/war.html"><i class="fas fa-cogs"></i><span>wars</span></a>
+        <a href="histo/vid.html"><i class="fas fa-table"></i><span>vids</span></a>
+        <a href="histo/abook.html"><i class="fas fa-th"></i><span>books & audiobooks</span></a>
+        <a href="code/lang.html"><i class="fas fa-info-circle"></i><span>Launguages</span></a>
+        <a href="code/doc.html"><i class="fas fa-sliders-h"></i><span>docs & articals</span></a>
+        <a href="code/vid.html"><i class="fas fa-table"></i><span>Vids</span></a>
+        <a href="tech/doc.html"><i class="fas fa-th"></i><span>docs & articals</span></a>
+        <a href="tech/vid.html"><i class="fas fa-info-circle"></i><span>Vids</span></a>
+    --> 
       </div>
     </div>
     <!--mobile navigation bar end-->
@@ -88,27 +88,217 @@
         
         <h5>Archives</h5> 
       </div>
-      <a href="../channel.html"><i class="fab fa-youtube"></i><span>youtube channels</span></a>
+      <script src="../js/accord.js"></script>
+       <a href="../channel.html"><i class="fab fa-youtube"></i><span>youtube channels</span></a>
       <a href="../other/index.html" ><i  class="fas fa-question-circle"></i><span>other topics</span></a>
-      <p>history</p>
-      <a href="../histo/war.html"><i class="fas fa-fighter-jet"></i><span>wars</span></a>
-      <a href="../histo/vid.html"><i class="fas fa-play"></i><span>vids</span></a>
-      <a href="../histo/abook.html"><i class="fas fa-microphone"></i><span>books & audiobooks</span></a>
-      <p>coding</p>
-      <a href=""><i class="fas fa-java"></i><span>Launguages</span></a>
-      <a href="doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
-      <a href="vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
-      <p>tech</p>
-      <a href="../tech/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
-      <a href="../tech/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
+     <!-- <p><a style="text-align: left; display: unset; padding: 25px auto; align-items: left;" href="content/histo/histro.html">history</a></p>
+      <a href="content/histo/war.html"><i class="fas fa-fighter-jet"></i><span>wars</span></a>
+      <a href="content/histo/vid.html"><i class="fas fa-play"></i><span>vids</span></a>
+      <a href="content/histo/abook.html"><i class="fas fa-microphone"></i><span>books & audiobooks</span></a>
+      <p><a style="text-align: left; display: unset; padding: 25px auto;" href="content/code/code.html">coding</a></p>
+      <a href="content/code/lang.html"><i class="fas fa-java"></i><span>Launguages</span></a>
+      <a href="content/code/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
+      <a href="content/code/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
+      <p><a style="text-align: left; margin-right: 20px; display: unset; padding: 25px auto;" href="content/tech/tech.html">tech</a></p>
+      <a href="content/tech/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
+      <a href="content/tech/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>  -->
+      <button class="accordion" >history<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+      <div class="panel">
+        <a href="../histo/war.html"><i class="fas fa-history"></i><span>history</span></a>
+        <a href="../histo/war.html"><i class="fas fa-fighter-jet"></i><span>wars</span></a>
+        <a href="../histo/vid.html"><i class="fas fa-play"></i><span>vids</span></a>
+        <a href="../histo/abook.html"><i class="fas fa-microphone"></i><span>books & audiobooks</span></a>
+      </div>
+
+      <button class="accordion" >coding<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+      <div class="panel">
+        <a href="../code/code.html"><i class="fas fa-code"></i><span>code</span></a>
+        <a href="../code/lang.html"><i class="fab fa-java"></i><span>Launguages</span></a>
+        <a href="../code/doc.html"><i class="fas fa-info-circle"></i><span>docs & articals</span></a>
+        <a href="../code/vid.html"><i class="fas fa-play"></i><span>Vids</span></a>
+        <button class="accordion" >home<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../../coding-website/content/home/html/index.html"><i class="fab fa-java"></i><span>html</span></a>
+          <a href="../../coding-website/content/home/java/index.html"><i class="fab fa-java"></i><span>java</span></a>
+          <a href="../../coding-website/content/home/powershell/index.html"><i class="fab fa-java"></i><span>powershell</span></a>
+          <a href="../../coding-website/content/home/kotlin/index.html"><i class="fab fa-java"></i><span>kotlin</span></a>
+          <a href="../../coding-website/content/home/sh/index.html"><i class="fab fa-java"></i><span>sh</span></a>
+          <a href="../../coding-website/content/home/batch-cmd/index.html"><i class="fab fa-java"></i><span>batch</span></a>
+          <a href="../../coding-website/content/home/css/index.html"><i class="fab fa-java"></i><span>css</span></a>
+          <a href="../../coding-website/content/home/nodejs/index.html"><i class="fab fa-java"></i><span>nodejs</span></a>
+          <a href="../../coding-website/content/home/autoit/index.html"><i class="fab fa-java"></i><span>autoit</span></a>
+          <a href="../../coding-website/content/home/autohotkey/index.html"><i class="fab fa-java"></i><span>autohotkey</span></a>
+          <a href="../../coding-website/content/home/cmake/index.html"><i class="fab fa-java"></i><span>cmake</span></a>
+          <a href="../../coding-website/content/home/python/index.html"><i class="fab fa-java"></i><span>python</span></a>
+          <a href="../../coding-website/content/home/xml/index.html"><i class="fab fa-java"></i><span>xml</span></a>
+          <a href="../../coding-website/content/home/dot-net/index.html"><i class="fab fa-java"></i><span>.net</span></a>
+          <a href="../../coding-website/content/home/json/index.html"><i class="fab fa-java"></i><span>json</span></a>
+          <a href="../../coding-website/content/home/c/index.html"><i class="fab fa-java"></i><span>c</span></a>
+          <a href="../../coding-website/content/home/cplus/index.html"><i class="fab fa-java"></i><span>c++</span></a>
+          <a href="../../coding-website/content/home/cplus/index.html"><i class="fab fa-java"></i><span>c#</span></a>
+          <a href="../../coding-website/content/home/php/index.html"><i class="fab fa-java"></i><span>php</span></a>
+          <a href="../../coding-website/content/home/rust/index.html"><i class="fab fa-java"></i><span>rust</span></a>
+          <a href="../../coding-website/content/home/ruby/index.html"><i class="fab fa-java"></i><span>ruby</span></a>
+          <a href="../../coding-website/content/home/r/index.html"><i class="fab fa-java"></i><span>r</span></a>
+          <a href="../../coding-website/content/home/xaml/index.html"><i class="fab fa-java"></i><span>xaml</span></a>
+          <a href="../../coding-website/content/home/unity/index.html"><i class="fab fa-java"></i><span>unity</span></a>
+          <a href="../../coding-website/content/home/action-script/index.html"><i class="fab fa-java"></i><span>action script</span></a>
+          <a href="../../coding-website/content/home/markdown/index.html"><i class="fab fa-java"></i><span>markdown</span></a>
+  
+       
+        </div>
+        <button class="accordion" >how to<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../../coding-website/content/how-to/html/index.html"><i class="fab fa-java"></i><span>html</span></a>
+          <a href="../../coding-website/content/how-to/java/index.html"><i class="fab fa-java"></i><span>java</span></a>
+          <a href="../../coding-website/content/how-to/powershell/index.html"><i class="fab fa-java"></i><span>powershell</span></a>
+          <a href="../../coding-website/content/how-to/kotlin/index.html"><i class="fab fa-java"></i><span>kotlin</span></a>
+          <a href="../../coding-website/content/how-to/sh/index.html"><i class="fab fa-java"></i><span>sh</span></a>
+          <a href="../../coding-website/content/how-to/batch-cmd/index.html"><i class="fab fa-java"></i><span>batch</span></a>
+          <a href="../../coding-website/content/how-to/css/index.html"><i class="fab fa-java"></i><span>css</span></a>
+          <a href="../../coding-website/content/how-to/nodejs/index.html"><i class="fab fa-java"></i><span>nodejs</span></a>
+          <a href="../../coding-website/content/how-to/autoit/index.html"><i class="fab fa-java"></i><span>autoit</span></a>
+          <a href="../../coding-website/content/how-to/autohotkey/index.html"><i class="fab fa-java"></i><span>autohotkey</span></a>
+          <a href="../../coding-website/content/how-to/cmake/index.html"><i class="fab fa-java"></i><span>cmake</span></a>
+          <a href="../../coding-website/content/how-to/python/index.html"><i class="fab fa-java"></i><span>python</span></a>
+          <a href="../../coding-website/content/how-to/xml/index.html"><i class="fab fa-java"></i><span>xml</span></a>
+          <a href="../../coding-website/content/how-to/dot-net/index.html"><i class="fab fa-java"></i><span>.net</span></a>
+          <a href="../../coding-website/content/how-to/json/index.html"><i class="fab fa-java"></i><span>json</span></a>
+          <a href="../../coding-website/content/how-to/c/index.html"><i class="fab fa-java"></i><span>c</span></a>
+          <a href="../../coding-website/content/how-to/cplus/index.html"><i class="fab fa-java"></i><span>c++</span></a>
+          <a href="../../coding-website/content/how-to/c-sharp/index.html"><i class="fab fa-java"></i><span>c#</span></a>
+          <a href="../../coding-website/content/how-to/php/index.html"><i class="fab fa-java"></i><span>php</span></a>
+          <a href="../../coding-website/content/how-to/rust/index.html"><i class="fab fa-java"></i><span>rust</span></a>
+          <a href="../../coding-website/content/how-to/ruby/index.html"><i class="fab fa-java"></i><span>ruby</span></a>
+          <a href="../../coding-website/content/how-to/r/index.html"><i class="fab fa-java"></i><span>r</span></a>
+          <a href="../../coding-website/content/how-to/xaml/index.html"><i class="fab fa-java"></i><span>xaml</span></a>
+          <a href="../../coding-website/content/how-to/unity/index.html"><i class="fab fa-java"></i><span>unity</span></a>
+          <a href="../../coding-website/content/how-to/action-script/index.html"><i class="fab fa-java"></i><span>action script</span></a>
+          <a href="../../coding-website/content/how-to/markdown/index.html"><i class="fab fa-java"></i><span>markdown</span></a>
+  
+       
+        </div>
+
+        <button class="accordion" >docs<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../../coding-website/content/doc/html/index.html"><i class="fab fa-java"></i><span>html</span></a>
+          <a href="../../coding-website/content/doc/java/index.html"><i class="fab fa-java"></i><span>java</span></a>
+          <a href="../../coding-website/content/doc/powershell/index.html"><i class="fab fa-java"></i><span>powershell</span></a>
+          <a href="../../coding-website/content/doc/kotlin/index.html"><i class="fab fa-java"></i><span>kotlin</span></a>
+          <a href="../../coding-website/content/doc/sh/index.html"><i class="fab fa-java"></i><span>sh</span></a>
+          <a href="../../coding-website/content/doc/batch-cmd/index.html"><i class="fab fa-java"></i><span>batch</span></a>
+          <a href="../../coding-website/content/doc/css/index.html"><i class="fab fa-java"></i><span>css</span></a>
+          <a href="../../coding-website/content/doc/nodejs/index.html"><i class="fab fa-java"></i><span>nodejs</span></a>
+          <a href="../../coding-website/content/doc/autoit/index.html"><i class="fab fa-java"></i><span>autoit</span></a>
+          <a href="../../coding-website/content/doc/autohotkey/index.html"><i class="fab fa-java"></i><span>autohotkey</span></a>
+          <a href="../../coding-website/content/doc/cmake/index.html"><i class="fab fa-java"></i><span>cmake</span></a>
+          <a href="../../coding-website/content/doc/python/index.html"><i class="fab fa-java"></i><span>python</span></a>
+          <a href="../../coding-website/content/doc/xml/index.html"><i class="fab fa-java"></i><span>xml</span></a>
+          <a href="../../coding-website/content/doc/dot-net/index.html"><i class="fab fa-java"></i><span>.net</span></a>
+          <a href="../../coding-website/content/doc/json/index.html"><i class="fab fa-java"></i><span>json</span></a>
+          <a href="../../coding-website/content/doc/c/index.html"><i class="fab fa-java"></i><span>c</span></a>
+          <a href="../../coding-website/content/doc/cplus/index.html"><i class="fab fa-java"></i><span>c++</span></a>
+          <a href="../../coding-website/content/doc/c-sharp/index.html"><i class="fab fa-java"></i><span>c#</span></a>
+          <a href="../../coding-website/content/doc/php/index.html"><i class="fab fa-java"></i><span>php</span></a>
+          <a href="../../coding-website/content/doc/rust/index.html"><i class="fab fa-java"></i><span>rust</span></a>
+          <a href="../../coding-website/content/doc/ruby/index.html"><i class="fab fa-java"></i><span>ruby</span></a>
+          <a href="../../coding-website/content/doc/r/index.html"><i class="fab fa-java"></i><span>r</span></a>
+          <a href="../../coding-website/content/doc/xaml/index.html"><i class="fab fa-java"></i><span>xaml</span></a>
+          <a href="../../coding-website/content/doc/unity/index.html"><i class="fab fa-java"></i><span>unity</span></a>
+          <a href="../../coding-website/content/doc/action-script/index.html"><i class="fab fa-java"></i><span>action script</span></a>
+          <a href="../../coding-website/content/doc/markdown/index.html"><i class="fab fa-java"></i><span>markdown</span></a>
+  
+       
+        </div>
+      
+      </div>
+
+
+      <button class="accordion" >tech<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+      <div class="panel">
+        <button class="accordion" >sysadmin<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../tech/sysadmin/index.html"><i class="fas fa-users"></i><span>sysadmin</span></a>
+          <a href="../tech/sysadmin/software.html"><i class="fab fa-linux"></i><span>software</span></a>
+          <a href="../tech/sysadmin/networking.html"><i class="fas fa-wifi"></i><span>networking</span></a>
+       
+        </div>
+
+        <a href="../tech/tech.html"><i class="fas fa-microchip"></i><span>tech</span></a>
+        <a href="../tech/doc.html"><i class="fas fa-info-circle"></i><span>docs</span></a>
+        <a href="../tech/vid.html"><i class="fas fa-play"></i><span>vids</span></a>
+     
+        <button class="accordion" >android<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../tech/os/android/index.html"><i class=""></i><span>android</span></a>
+          <a href="../tech/os/android/privicy/index.html"><i class=""></i><span>privicy</span></a>
+          <a href="../tech/os/android/tweaks/index.html"><i class=""></i><span>tweaks</span></a>
+          <a href="../tech/os/android/security/index.html"><i class=""></i><span>security</span></a>
+       
+       
+        </div>
+  
+        <button class="accordion" >windows<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../tech/os/w10/index.html"><i class=""></i><span>windows</span></a>
+          <a href="../tech/os/w10/privicy/index.html"><i class=""></i><span>privicy</span></a>
+          <a href="../tech/os/w10/tweaks/index.html"><i class=""></i><span>tweaks</span></a>
+          <a href="../tech/os/w10/security/index.html"><i class=""></i><span>security</span></a>
+        </div>
+        <button class="accordion" >linux<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../tech/os/linux/index.html"><i class=""></i><span>linux</span></a>
+          <a href="../tech/os/linux/ricing/index.html"><i class=""></i><span>ricing</span></a>
+          <a href="../tech/os/linux/config/index.html"><i class=""></i><span>configuring</span></a>
+          <a href="../tech/os/linux/parts/index.html"><i class=""></i><span>componets of linux</span></a>
+          <a href="../tech/os/linux/servers/index.html"><i class=""></i><span>severs</span></a>
+          <a href="../tech/os/linux/security/index.html"><i class=""></i><span>security</span></a>
+              
+        </div>
+        <button class="accordion" >mac<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../tech/os/mac/index.html"><i class=""></i><span>mac os</span></a>
+          <a href="../tech/os/mac/privicy/index.html"><i class=""></i><span>privicy</span></a>
+          <a href="../tech/os/mac/security/index.html"><i class=""></i><span>security</span></a>
+          <a href="../tech/os/mac/tweaks/index.html"><i class=""></i><span>tweaks</span></a>
+       
+        </div>
+  
+        <button class="accordion" >ios<i class="fas fa-angle-right dropdown" style="padding-left: 19px;"></i></button>   
+        <div class="panel">
+          <a href="../tech/os/ios/index.html"><i class=""></i><span>ios</span></a>
+          <a href="../tech/os/ios/privicy/index.html"><i class=""></i><span>privicy</span></a>
+          <a href="../tech/os/ios/tweaks/index.html"><i class=""></i><span>tweaks</span></a>
+          <a href="../tech/os/ios/security/index.html"><i class=""></i><span>security</span></a>
+        
+        </div>
+      </div>
     </div>
+
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
     <!--sidebar end-->
 
     <div class="content">
       <div class="scrollmenu">
         <div class="scrollmenu">
           <button class="tabscroll" onclick="openPage('Home', this, '')" id="defaultOpen">Home</button>
-        <button class="tabscroll" onclick="openPage('', this, '')" ></button>
+        <button class="tabscroll" onclick="openPage('supos', this, '')" >supported platforms</button>
         <button class="tabscroll" onclick="openPage('', this, '')"></button>
         <button class="tabscroll" onclick="openPage('', this, '')"></button>
         <button class="tabscroll" onclick="openPage('', this, '')"></button>
@@ -128,7 +318,409 @@
         <button class="tabscroll" onclick="openPage('', this, '')">topics</button> 
         </div>
       </div>
-      
+    
+    <div id="supos" class="tabcontent" style="background: #fff;">
+<h1></h1>
+
+<table class="table">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">python</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">batch (cmd)</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">autoit</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">autohotkey</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">action script</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">cmake</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">c</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">c++</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">c#</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">coffeescript</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">css</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">dart</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">.net</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">f#</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">g-code</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">go</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">html</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">javascript</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">java</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">json</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">kotlin</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">lua</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">markdown</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">nodejs</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">perl</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">powershell</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">php</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+
+
+  <tr class="otr">
+    <td class="otd">rust</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">r</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">ruby</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">reg</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">react</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+
+  <tr class="otr">
+    <td class="otd">SQL</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">sh </td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">swift</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">typescript</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+
+  <tr class="otr">
+    <td class="otd">unity</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">xaml</td>
+    <td class="otd"><i class="fas fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+  <tr class="otr">
+    <td class="otd">xml</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+
+  <tr class="otr">
+    <td class="otd">applescript</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+
+</table>
+<h3 style="text-align: center; padding-top: 20px;">how i classify no from yes</h3>
+<article style="padding-top: 10px;">
+  <h2 style="text-align: center;">yes</h2>
+<h4>to classify as working</h4>
+<p>can used in a termanil</p>
+<p>can you used in ui or native app</p>
+<p>can be run as scripts</p>
+
+<p>opening the file as plain text does not classify it as working</p>
+
+
+</article>
+<article style="padding-top: 10px;">
+  <h2 style="text-align: center;">no</h2>
+  <h4>to classify as not working</h4>
+  <p>can not be used in a termanil</p>
+  <p>can not be used in ui or native app</p>
+  <p>can not be run as scripts</p>
+</article >
+    </div>  
+
+
     <div id="Home" class="tabcontent"> <!-- USE THIS TO AVOID COPYRIGHT FOR PDF #toolbar=0 at the end-->
 
       <div class="smmnavbar">
@@ -196,407 +788,2061 @@
 <!--  code tabs have to use pdf for wikipedia because of copyright -->
 <div id="autohotkey" class="tabcontent">
      
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/AutoHotkey-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/AutoHotkey" target="_blank">Wikipedia</a></p>
   </div>
   <div class="card">
-    <h2 class="whh1">autoit</h2> 
+    <h2 class="whh1">autohotkey</h2> 
 
   </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">autohotkey</td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fas fa-times"></i></td>
+      <td class="otd"><i class="fas fa-times"></i></td>
+      <td class="otd"><i class="fas fa-times"></i></td>
+      <td class="otd"><i class="fas fa-times"></i></td>
+      <td class="otd"><i class="fas fa-times"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
 </div>
 
 <div id="autoit" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/AutoIt-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe> 
     <p><a href="https://en.wikipedia.org/wiki/AutoIt" target="_blank">Wikipedia</a></p> 
+
   </div> 
+
+    <div class="card">
+      <h2 class="whh1">autoit</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">autoit</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+      </tr>
+  
+    
+    </table>
+
+
+    <h3  class="clawc"><a href="https://www.autoitscript.com/site/" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="https://www.autoitscript.com/site/autoit/downloads/" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="https://www.autoitscript.com/wiki/Documentation" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="../../coding-website/content/home/autoit/index.html" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="../../coding-website/content/doc/autoit/index.html" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="../../coding-website/content/how-to/autoit/index.html" style="color: red;">how to</a> </h3>
+
 </div>
 
+
+<div id="action" class="tabcontent">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
+    <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
+    <iframe src="../content/wikapiada/ActionScript-Wikipedia.pdf" width="100%" height="700px">
+    </iframe> 
+    <p><a href="https://en.wikipedia.org/wiki/ActionScript" target="_blank">Wikipedia</a></p> 
+
+  </div> 
+
+    <div class="card">
+      <h2 class="whh1">action script</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">action script</td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="../../coding-website/content/home/action-script/index.html" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="../../coding-website/content/doc/action-script/index.html" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="../../coding-website/content/how-to/action-script/index.html" style="color: red;">how to</a> </h3>
+</div>
+
+
 <div id="cmake" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/CMake-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/CMake" target="_blank">Wikipedia</a></p>
+  
   </div> 
+
+
+    <div class="card">
+      <h2 class="whh1">cmake</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">cmake</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+
+    <h3  class="clawc"><a href="https://cmake.org/" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="https://cmake.org/download" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="https://cmake.org/documentation/" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="../../coding-website/content/home/cmake/index.html" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="../../coding-website/content/doc/cmake/index.html" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="../../coding-website/content/how-to/cmake/index.html" style="color: red;">how to</a> </h3>
 
 </div>
 <div id="ccc" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/C-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>
     <p><a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">Wikipedia</a></p>
-  </div> 
+
+   </div> 
+
+ 
+    <div class="card">
+      <h2 class="whh1">c </h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">c</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="http://open-std.org/jtc1/sc22/wg14/" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="http://open-std.org/jtc1/sc22/wg14/www/wg14_document_log" style="color: red;">luangauges download</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="../../coding-website/content/home/c/index.html" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="../../coding-website/content/doc/c/index.html" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="../../coding-website/content/how-to/c/index.html" style="color: red;">how to</a> </h3>
+
+      <h1>do not use c it is old it is made is the 1980s</h1>
 </div>
 
 <div id="cplus" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Cplus-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">Wikipedia</a></p>
+  
+
   </div> 
+
+    <div class="card">
+      <h2 class="whh1">c++</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">c++</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="https://www.iso.org/standard/50372.html" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="../../coding-website/content/home/cplus/index.html" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="../../coding-website/content/doc/cplus/index.html" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="../../coding-website/content/how-to/cplus/index.html" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="c#" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/C-Sharp-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">Wikipedia</a></p>
+  
+
   </div> 
+
+<div class="card">
+      <h2 class="whh1">c#</h2> 
+  
+    </div>
+  
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">c#</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="../../coding-website/content/home/" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="../../coding-website/content/doc/" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="../../coding-website/content/how-to/" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="cmd" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Batch-file-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Batch_file" target="_blank">Wikipedia</a></p>
+  
+    
+
   </div> 
+
+<div class="card">
+      <h2 class="whh1">batch (cmd)</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">batch</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+      </tr>
+  
+    
+    </table>
+
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="coffeescript" class="tabcontent">
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/CoffeeScript-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/CoffeeScript" target="_blank">Wikipedia</a></p>
+  
+    
+
   </div> 
+
+<div class="card">
+      <h2 class="whh1">coffeescript</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">coffeescript</td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="css" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/CSS-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">Wikipedia</a></p>
+ 
+  
+
+ 
   </div> 
+
+  <div class="card">
+      <h2 class="whh1">css</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">css</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="dart" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Dart-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" target="_blank">Wikipedia</a></p>
+
+   
+
+
   </div> 
+
+ <div class="card">
+      <h2 class="whh1">dart</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">dart</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fas fa-times"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
+
 </div>
 
 <div id=".net" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/dot-NET-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/.NET" target="_blank">Wikipedia</a></p>
+ 
+ 
+
+ 
   </div> 
+
+   <div class="card">
+      <h2 class="whh1">.net</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">.net</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="f#" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/F-Sharp-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/F_Sharp_(programming_language)" target="_blank">Wikipedia</a></p>
+ 
+ 
+
+ 
   </div> 
+
+   <div class="card">
+      <h2 class="whh1">f#</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">f#</td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="g-code" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/G-code-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/G-code" target="_blank">Wikipedia</a></p>
+ 
+ 
+ 
   </div> 
+
+   <div class="card">
+      <h2 class="whh1">g-code</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">g-code</td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="go" class="tabcontent">
   <button class="accordion">Wikipedia</button> 
-  <div class="panel">
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Go-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Go_(programming_language)" target="_blank">Wikipedia</a></p>
+  
+   
+  
   </div> 
+
+ <div class="card">
+      <h2 class="whh1">go</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">go</td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="bx bx-question-mark"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="html" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/HTML-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">Wikipedia</a></p>
+
+   
+
   </div> 
- 
+  <div class="card">
+      <h2 class="whh1">html</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">html</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
 
 </div>
 
 <div id="java" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Java-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Wikipedia</a></p>
+  
+  
   </div> 
+
+    <div class="card">
+      <h2 class="whh1">java</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">java</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
 
 </div>
 
 <div id="javascript" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/JavaScript-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia</a></p>
+
   </div> 
+
+ <div class="card">
+      <h2 class="whh1">javascript</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">javascript</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
 
 </div>
 
 <div id="json" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/JSON-Wikipedia.pdf" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/JSON" target="_blank">Wikipedia</a></p>
+ 
   </div> 
+
+<div class="card">
+      <h2 class="whh1">json</h2> 
+  
+    </div>
+
+    <h4 style="text-align: center;">supported platfroms</h4>
+    <table class="table" style="background-color: #fff;">
+      <tr class="otr">
+        <th class="oth" style="width:50%">languages</th>
+        <th class="oth">windows</th>
+        <th class="oth">mac</th>
+        <th class="oth">android</th>
+        <th class="oth">linux</th>
+        <th class="oth">ios</th>
+        <th class="oth">web</th>
+        </tr>
+      <tr class="otr">
+        <td class="otd">json</td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+        <td class="otd"><i class="fa fa-check"></i></td>
+      </tr>
+  
+    
+    </table>
+
+    <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+    <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+    <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+  
+  
+  <br><h2 class="clawc">my documention</h2>
+   <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+   <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+   <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
 
 </div>
 
 <div id="kotlin" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Kotlin-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
 
+
+  <div class="card">
+    <h2 class="whh1">kotlin</h2> 
+
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">kotlin</td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+    </tr>
+
+  
+  </table>
+
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="lua" class="tabcontent">
 
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Lua-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Lua_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">lua</h2> 
+
+</div>
+
+<h4 style="text-align: center;">supported platfroms</h4>
+<table class="table" style="background-color: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">lua</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+
+
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="md" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Markdown-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Wikipedia</a></p>
   </div> 
 
+  <div class="card">
+    <h2 class="whh1">markdown (md)</h2> 
+
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">markdown</td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 <div id="node" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Node-js-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+  <div class="card">
+    <h2 class="whh1">nodejs</h2> 
+
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">nodejs</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="perl" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Perl-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe> 
     <p><a href="https://en.wikipedia.org/wiki/Perl" target="_blank">Wikipedia</a></p> 
   </div> 
 
+  <div class="card">
+    <h2 class="whh1">perl</h2> 
+
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">perl</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 <div id="powershell" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/PowerShell-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/PowerShell" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">powershell</h2> 
+
+</div>
+
+<h4 style="text-align: center;">supported platfroms</h4>
+<table class="table" style="background-color: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">powershell</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+
+
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="python" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Python-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">python</h2> 
+
+</div>
+
+<h4 style="text-align: center;">supported platfroms</h4>
+<table class="table" style="background-color: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">python</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+
+
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="php" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/PHP-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/PHP" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">php</h2> 
+
+</div>
+
+<h4 style="text-align: center;">supported platfroms</h4>
+<table class="table" style="background-color: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">php</td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+
+
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="rust" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Rust-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">rust</h2> 
+
+</div>
+
+<h4 style="text-align: center;">supported platfroms</h4>
+<table class="table" style="background-color: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">rust</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+  </tr>
+
+
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="r" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/R-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">r</h2> 
+
+</div>
+
+<h4 style="text-align: center;">supported platfroms</h4>
+<table class="table" style="background-color: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">r</td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+    <td class="otd"><i class="bx bx-question-mark"></i></td>
+  </tr>
+
+
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="ruby" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Ruby-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">ruby</h2> 
+
+</div>
+<table class="otable" style="background: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr> 
+    <td class="otd">ruby</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="reg" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/" width="100%" height="700px">
     </iframe>  
     <p><a href="" target="_blank">Wikipedia</a></p>
   </div> 
+
+
+<div class="card">
+  <h2 class="whh1">Registry editor file</h2> 
+
+</div>
+
+<h4 style="text-align: center;">supported platfroms</h4>
+<table class="table" style="background-color: #fff;">
+  <tr class="otr">
+    <th class="oth" style="width:50%">languages</th>
+    <th class="oth">windows</th>
+    <th class="oth">mac</th>
+    <th class="oth">android</th>
+    <th class="oth">linux</th>
+    <th class="oth">ios</th>
+    <th class="oth">web</th>
+    </tr>
+  <tr class="otr">
+    <td class="otd">registry file</td>
+    <td class="otd"><i class="fa fa-check"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+    <td class="otd"><i class="fas fa-times"></i></td>
+  </tr>
+
+
+</table>
+
+<h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+<h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+<h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+<h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+<h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+<h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 
 <div id="react" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/React-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank">Wikipedia</a></p>
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">react</h2> 
+  
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">react</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="SQL" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/SQL-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/SQL" target="_blank">Wikipedia</a></p>
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">SQL</h2> 
+  
+  </div>
+  
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <p style="text-align: center;">SQL is a database program so it is hard to classify it</p>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">SQl</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="sh" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/" width="100%" height="700px">
     </iframe>  
     <p><a href="" target="_blank">Wikipedia</a></p>
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">sh (bash)</h2> 
+  
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">sh</td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="swift" class="tabcontent">  <!-- apple version-->
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/Swift-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">swift </h2> 
+  
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">swift</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="typescr" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/TypeScript-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe> 
     <p><a href="https://en.wikipedia.org/wiki/TypeScript" target="_blank">Wikipedia</a></p> 
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">typescript</h2> 
+  
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">typesript</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 
 <div id="unity" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/UNITY-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/UNITY_(programming_language)" target="_blank">Wikipedia</a></p>
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">unity</h2> 
+  
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">unity</td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="fas fa-times"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="xaml" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/xaml-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language" target="_blank">Wikipedia</a></p>
-  </div> 
+  </div>
+  
+  <div class="card">
+    <h2 class="whh1">xaml</h2> 
+  
+  </div>
+
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">xaml</td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 <div id="xml" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/XML-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/XML" target="_blank">Wikipedia</a></p>
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">xml</h2> 
+  
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">xml</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="fa fa-check"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
+
 </div>
 
 
 
 <div id="applescript" class="tabcontent">
-  <button class="accordion">Wikipedia</button>
-  <div class="panel">
+  <button class="aaccordion">Wikipedia</button>
+  <div class="ppanel">
     <h3>rember that wikipedia is not a credabile sources<a style="font-weight: bold; color: red;" href="https://www.youtube.com/watch?v=fPa0vxC6NA0">  learn more</a></h3>
     <iframe src="../content/wikapiada/AppleScript-Wikipedia.pdf#toolbar=0" width="100%" height="700px">
     </iframe>  
     <p><a href="https://en.wikipedia.org/wiki/AppleScript" target="_blank">Wikipedia</a></p>
   </div> 
+
+  <div class="card">
+    <h2 class="whh1">applescript</h2> 
+  
+  </div>
+
+  <h4 style="text-align: center;">supported platfroms</h4>
+  <table class="table" style="background-color: #fff;">
+    <tr class="otr">
+      <th class="oth" style="width:50%">languages</th>
+      <th class="oth">windows</th>
+      <th class="oth">mac</th>
+      <th class="oth">android</th>
+      <th class="oth">linux</th>
+      <th class="oth">ios</th>
+      <th class="oth">web</th>
+      </tr>
+    <tr class="otr">
+      <td class="otd">applescript</td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+      <td class="otd"><i class="bx bx-question-mark"></i></td>
+    </tr>
+
+  
+  </table>
+
+  <h3  class="clawc"><a href="" style="color: red;">luangauges page</a></h3><br>
+  <h4 class="clawc"><a href="" style="color: red;">luangauges download</a></h4>
+  <h4 class="clawc"><a href="" style="color: red;">thier documentation</a></h4>
+
+
+<br><h2 class="clawc">my documention</h2>
+ <h3 class="clawc"><a href="" style="color: red;">luangauges page</a> </h3>
+ <h3 class="clawc"><a href="" style="color: red;">refrences</a></h3>
+ <h3 class="clawc"><a href="" style="color: red;">how to</a> </h3>
 
 </div>
 
@@ -613,12 +2859,12 @@
 
 <!-- accordion  -->
 <script>
-  var acc = document.getElementsByClassName("accordion");
+  var acc = document.getElementsByClassName("aaccordion");
   var i;
   
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
+      this.classList.toggle("aactive");
       var panel = this.nextElementSibling;
       if (panel.style.display === "block") {
         panel.style.display = "none";
