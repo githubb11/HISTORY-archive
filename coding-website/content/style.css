@@ -344,37 +344,6 @@ label #sidebar_btn:hover{
     display: block;
   }
 
-  /*.mobile_nav_items{
-    background: #2F323A;
-    overflow: hidden;
-    max-height: 0;
-	transition: 0.5s;
-	transition-property: max-height;
-  }
-
-  .mobile_nav_items a{
-    color: #fff;
-    display: block;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 60px;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transition-property: background;
-  }
-
-  .mobile_nav_items a:hover{
-    background: #19B3D3;
-  }
-
-  .mobile_nav_items i{
-    padding-right: 10px;
-  }
-
-  .active{
-    max-height: 1000px;
-  }*/
 }
 
 
@@ -499,14 +468,6 @@ position: absolute;
 .show {display: block;}
 
 
-
-
-
-
-
-
-
-
 /* tabbs */
 /* Style the tab */
 .tab {
@@ -609,6 +570,7 @@ div.scrollmenu a:hover {
   text-decoration: none;
   display: inline-block;
 }
+
 
 
 

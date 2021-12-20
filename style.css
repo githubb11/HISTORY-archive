@@ -769,3 +769,15 @@ div.scrollmenu a:hover {
   color: #fff;
   
 }
+
+.column{
+  float: left;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.row{
+  width: auto;
+  height: auto;
+}

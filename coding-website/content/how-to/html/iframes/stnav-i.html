@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: ;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>for effects</p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">blank</a>
+  <a href="javascript:void(0)">blank</a>
+  <a href="javascript:void(0)">blank</a>
+</div>
+
+<div class="content">
+  <h3>Sticky Navigation Example</h3>
+  <p>The navbar will stick to the top when you reach its scroll spat</p>
+  <p>Corporis ea enim cum sed dolorum sed veritatis voluptas. Sequi non ut excepturi sed error consectetur corporis atque. At perferendis sit impedit tenetur sint est. Voluptas eveniet</p>
+  <p>facere error. Fugit ullam nihil eveniet temporibus commodi numquam rerum. Voluptas dicta molestiae minus eligendi.</p>
+  <p>Saepe nesciunt odio sed dolorem incidunt enim id. Velit aut totam natus suscipit</p>
+  <p>eos facilis. Repellat sed deserunt minima qui consequatur veniam quisquam.</p>
+  <p>Autem ducimus fugit ducimus rerum ratione soluta omnis consequatur. Ipsa esse veniam dolor quo. Esse</p>
+  <p>reiciendis et deleniti perferendis. Impedit veniam cupiditate earum cum est numquam. Quia ut</p>
+  <p>Velit repellat culpa quos. Vero aut impedit sunt a deleniti consectetur. Ea molestiae voluptatem qui</p>
+  
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

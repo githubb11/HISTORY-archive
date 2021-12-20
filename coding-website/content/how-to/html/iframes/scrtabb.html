@@ -1,0 +1,104 @@
+<!DOCTYPE html><html>
+  <head>
+    <style>
+      div.scrollmenu {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+        position: absolute;
+      }
+      
+      div.scrollmenu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+      
+      div.scrollmenu a:hover {
+        background-color: #777;
+      }
+      
+      .tabscroll {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        background-color: #333;
+        text-align: center;
+      
+      }
+      
+      .tabscroll:hover {
+        background-color: 777;
+      }
+
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: 
+      }
+      
+    </style>
+  </head>
+<body>
+  <div class="scrollmenu">
+  <div class="scrollmenu">
+    <button class="tabscroll" onclick="openPage('Home', this, '')" >Home</button>
+  <button class="tabscroll" onclick="openPage('1', this, '')" >tab 1</button>
+  <button class="tabscroll" onclick="openPage('2', this, '')">tab 2</button>
+  <button class="tabscroll" onclick="openPage('3', this, '')">tab 3</button>
+  <button class="tabscroll" onclick="openPage('4', this, '')">tab 4</button>
+
+
+
+  </div>
+</div>
+  <div id="Home" class="tabcontent">
+  <p>tab home</p>
+  </div>
+  <div id="1" class="tabcontent">
+    <p>tab home</p>
+  
+  </div>
+  <div id="3" class="tabcontent">
+    <p>tab home</p>
+  
+  </div>
+  <div id="2" class="tabcontent">
+    <p>tab home</p>
+  
+  </div>
+  <div id="4" class="tabcontent">
+    <p>tab home</p>
+  
+  </div>
+  
+
+  <script>
+    function openPage(pagename,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pagename).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+  </div>
+
+
+
+</body>
+  </html>

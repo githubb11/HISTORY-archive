@@ -1,0 +1,93 @@
+<!DOCTYPE html><html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+      .column{
+        float: left;
+        width: 70px;
+        height: 70px;
+       
+        overflow: hidden;
+     }
+     
+     .row{
+         width: 68px;
+         height: 25px;
+         border: 1px solid red;
+     }
+
+
+
+
+
+     .icon-bar {
+      width: 90px;
+      background-color: #555;
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 36px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+    }
+
+
+    .iicon-bar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+    }
+    
+    .iicon-bar a {
+      float: left;
+      width: 20%;
+      text-align: center;
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 36px;
+    }
+    
+    .iicon-bar a:hover {
+      background-color: #000;
+    }
+    
+    .aactive {
+      background-color: #04AA6D;
+    }
+    </style>
+  </head>
+<body>
+<div class="column" style="padding-right: 30px; width: 300px; height: 300px;">
+  <div class="icon-bar">
+    <a class="active" href="#"><i class="fa fa-home"></i></a> 
+    <a href="#"><i class="fa fa-search"></i></a> 
+    <a href="#"><i class="fa fa-envelope"></i></a> 
+    <a href="#"><i class="fa fa-globe"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a> 
+  </div>
+</div>
+<div class="column" style="padding-left: 30px; width: 300px; height: 300px;">
+  <div class="iicon-bar">
+    <a class="aactive" href="#"><i class="fa fa-home"></i></a> 
+    <a href="#"><i class="fa fa-search"></i></a> 
+    <a href="#"><i class="fa fa-envelope"></i></a> 
+    <a href="#"><i class="fa fa-globe"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a> 
+  </div>
+  
+</div>
+</body>
+
+  </html>

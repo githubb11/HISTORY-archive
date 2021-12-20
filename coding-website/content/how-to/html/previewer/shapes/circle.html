@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>html previewer</title>
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="">
+<link rel="stylesheet" href="lib/w3schools30.css">
+<link rel="stylesheet" href="lib/codemirror.css">
+
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+<script data-cfasync="false" type="text/javascript">
+var k42 = false;
+
+k42 = true;
+
+</script>
+
+
+<script>
+if (window.addEventListener) {              
+    window.addEventListener("resize", browserResize);
+} else if (window.attachEvent) {                 
+    window.attachEvent("onresize", browserResize);
+}
+var xbeforeResize = window.innerWidth;
+
+function browserResize() {
+    var afterResize = window.innerWidth;
+    if ((xbeforeResize < (970) && afterResize >= (970)) || (xbeforeResize >= (970) && afterResize < (970)) ||
+        (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
+        (xbeforeResize < (468) && afterResize >= (468)) ||(xbeforeResize >= (468) && afterResize < (468))) {
+        xbeforeResize = afterResize;
+        
+        if (document.getElementById("adngin-try_it_leaderboard-0")) {
+                adngin.queue.push(function(){  adngin.cmd.startAuction(["try_it_leaderboard"]); });
+              }
+         
+    }
+    if (window.screen.availWidth <= 768) {
+      restack(window.innerHeight > window.innerWidth);
+    }
+    fixDragBtn();
+    showFrameSize();    
+}
+var fileID = "";
+</script>
+<link rel="stylesheet" href="/coding-website/css/pre.css">
+</head>
+<body>
+
+
+
+<div class="trytopnav">
+<div class="cc-bar" style="overflow:auto">
+  <a href="/dwnloadable/howto/html/accord/accordion.html" onclick="showDialog()" title="Save code" class="cc-button cc-bar-item topnav-icons bx bxs-save" style="margin-top:-2px;" download=""></a>
+  <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="cc-button cc-bar-item cc-hide-small topnav-icons bx bx-rotate-right" style="margin-top:-2px;"></a>
+  <button id="runbtn" class="cc-button cc-bar-item cc-hover-white cc-hover-text-green" onclick="submitTryit(1);ga('send', 'event', 'runCode', 'click');adngin.cmd.startAuction(['try_it_leaderboard']);">Run &#10095;</button>
+  <span class="cc-right cc-hide-small" style="padding:8px 16px 8px 0;display:block;float:right;font-size:16px;margin-top:4px"><span id="framesize"></span></span>
+</div>
+
+</div>
+
+<div id="shield"></div>
+
+<a href="javascript:void(0)" id="dragbar"></a>
+<div id="container">
+
+<div id="menuOverlay" class="cc-overlay cc-transparent" style="cursor:pointer;z-index:4"></div>
+  <div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+        <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+          <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<h2>Circle CSS</h2>
+<div class="circle"></div>
+
+</body>
+</html> 
+
+</textarea>
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code" />
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/coding-website/js/pre.js"></script>
+</body>
+</html>
