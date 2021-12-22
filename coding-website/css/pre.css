@@ -27,14 +27,7 @@ body {
 .cc-bar .cc-bar-item:hover {
   color:#757575 !important;
 }
-a.ccschoolslink {
-  padding:0 !important;
-  display:inline !important;
-}
-a.ccschoolslink:hover,a.ccschoolslink:active {
-  text-decoration:underline !important;
-  background-color:transparent !important;
-}
+
 #dragbar{
   position:absolute;
   cursor: col-resize;
@@ -211,22 +204,7 @@ a.ccschoolslink:hover,a.ccschoolslink:active {
   display: inline-block!important;
   margin-top: 3px!important;
 }
-.darktheme #breadcrumb li {
-  color:#fff;
-}
-.darktheme #breadcrumb a {
-  background:#616161;
-  color: #ddd;
-}	
-.darktheme #breadcrumb a:after {
-  border-left: 12px solid #616161;
-}
-.darktheme #breadcrumb a:before {
-  border-left: 12px solid rgb(40, 44, 52);
-}
-.darktheme .currentcrumb {
-  color:#ddd;
-}
+
 #runbtn {
   background-color:#04AA6D;
   color:white;
@@ -238,22 +216,6 @@ a.ccschoolslink:hover,a.ccschoolslink:active {
   word-spacing:10px;
 }
 #runbtn:hover {
-  background-color: #059862 !important;
-  color:white!important;
-}
-#getwebsitebtn {
-  background-color:#04AA6D;
-  font-family: 'Source Sans Pro', sans-serif;  
-  color: white;
-  font-size: 18px;
-  padding:6px 15px;
-  margin-top:4px;
-  margin-right: 10px;
-  display: block;
-  float: right;
-  border-radius: 5px;
-}
-#getwebsitebtn:hover {
   background-color: #059862 !important;
   color:white!important;
 }
