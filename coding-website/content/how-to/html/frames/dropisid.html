@@ -85,10 +85,7 @@ $("#div1").load("accord.html #sidenav");
         var dropdown = document.getElementsByClassName(&quot;dropdown-btn&quot;);<br>var i;<br><br>for (i = 0; i < dropdown.length; i++) {<br>  dropdown[i].addEventListener(&quot;click&quot;, function() {<br>  this.classList.toggle(&quot;active&quot;);<br>  var dropdownContent = this.nextElementSibling;<br>  if (dropdownContent.style.display === &quot;block&quot;) {<br>  dropdownContent.style.display = &quot;none&quot;;<br>  } else {<br>  dropdownContent.style.display = &quot;block&quot;;<br>  }<br>  });<br>}
       </div>
       </div>
-<script>
-  window.addEventListener("scroll", fix_stickyad);
-  window.addEventListener("resize", fix_stickyad);
-</script>
+
 <script src="/coding-website/js/window.js"></script>
 </div>
 </div>        

@@ -56,7 +56,7 @@ closable tabs = closetab
  Responsive Image Grid = rimggrid
  Tab Gallery = tabgaller
  Image Hover Overlay = imghovov
- Image Overlay Slide = imgovsl
+ Image Overlay Slide = imgovsl ^
  Image Overlay Zoom = imgovzoom
  image button = imgbutt
  Image Overlay Title = imgoverti
@@ -78,7 +78,7 @@ closable tabs = closetab
  Thumbnails = imgthum
  Border Around Image = imgborai
  Meet The Team = imgmtt
- Sticky Image stickyimg
+ Sticky Image = stickyimg
  Flip an Image = flipimg
  Shake an Image = shakeimg
  Portfolio Gallery = imgportg
@@ -159,7 +159,7 @@ paralax scrolling = parascroll
 pricing table = pritable done
 sticky element = stickelem done
 todo list = todoli done
-typewritter typewri
+typewritter = typewri
 Quotes Slideshow = quotslid
 
 <h2 style="display: block;">Converters</h2>
